@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>天氣小幫手</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/bootstrap.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/site.css")" />
+</head>
+<body>
+    <div class="HeaderTitle">
+            <H1>天氣小幫手</H1>
+    </div>
+    <hr />
+    <div class="SelectButton">
+        <a href="@Url.Content("~/Query")"><button id="QueryCounter" class="btn btn-large btn-primary" type="button">基本查詢</button></a>
+        <a href="@Url.Content("~/AdvancedQuery")"><button id="UserMap" class="btn btn-large btn-success" type="button">進階查詢</button></a><br>
+        <a href="@Url.Content("~/Report")"><button class="btn btn-large btn-warning" type="button">相關報表</button></a>
+        <a href="@Url.Content("~/NotifyCenter")"><button class="btn btn-large btn-danger" type="button">通知設定</button></a>  
+    </div>
+    <div class="Content">
+        <!-- 內容  -->
+
+    </div>
+
+</body>
+</html>

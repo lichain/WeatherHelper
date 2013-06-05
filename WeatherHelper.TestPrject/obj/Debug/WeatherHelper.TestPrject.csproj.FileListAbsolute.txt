@@ -1,0 +1,13 @@
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\WeatherHelper.TestPrject.dll.config
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\WeatherHelper.TestPrject.dll
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\WeatherHelper.TestPrject.pdb
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\WeatherHelper.dll
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\WeatherHelper.pdb
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\obj\Debug\WeatherHelper.TestPrject.csprojResolveAssemblyReference.cache
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\obj\Debug\WeatherHelper.TestPrject.dll
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\obj\Debug\WeatherHelper.TestPrject.pdb
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\WeatherAPIServices.dll
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\WeatherAPIServices.pdb
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\CommonLib.dll
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\CommonLib.pdb
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\Config\CityAndArea.xml

@@ -1,0 +1,82 @@
+﻿@using WeatherHelper.HtmlHelper
+@{
+    ViewBag.Title = "Query";
+
+}
+<link href="@Url.Content("~/css/bootstrap-datetimepicker.min.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/js/bootstrap-datetimepicker.min.js")" type="text/javascript"></script>
+<form id="queryForm" method="POST" action="@Url.Action("DoQuery")">
+<h1>天氣查詢</h1>
+<div>
+        <table class="table table-striped">
+        <tr>
+        <th class="th_title">
+                <span class="title">地點(ex:台北市...)</span>
+        </th>
+        <td>
+            <span class="Title">縣市：</span>@Html.Raw(SelectHelper.AreaControl("CountryName"))
+            <span class="Title">地區：</span>@Html.Raw(SelectHelper.CountryControl("WeatherCountyCode"))
+        </td>
+        </tr>     
+        <tr>
+        <th class="th_title">
+                <span class="title">日期</span>
+        </th>
+         <td>
+                @*<input type="text" id="txtDate" placeholder="Type something…">*@
+                 <div class="well">
+                         <div id="datetimepicker1" class="input-append date">
+                                 <input id="CurrentDate" name="CurrentDate" data-format="yyyy/MM/dd" type="text"></input>
+                                 <span class="add-on"><i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+                                 </span>
+                         </div>
+                 </div>
+        </td>
+        </tr>       
+        </table>
+        <span id="btnQuery" class="btn btn-primary btn-large ">Query</span>
+        <a href="./"><span id="btnCancel" class="btn btn-primary btn-large ">Cancel</span></a>
+</div>
+<script type="text/javascript">
+    $(function () {
+        var datepicker1 = $('#datetimepicker1');
+        datepicker1.datetimepicker();
+        $("#datetimepicker1 > input").val(getNow());
+
+        //var selectAreaID = 'selectArea';
+        //var selectCountryID = 'selectCountry';
+
+        //$("#selectCountry > option[data-area-code!='" + "2" + "']").hide();
+
+        $("#CountryName").change(function () {
+            $("#WeatherCountyCode").val("");
+            var AreaCode = $("#CountryName option:selected").attr("value");
+            $("#WeatherCountyCode > option").show();
+            //alert(AreaCode);
+            $("#WeatherCountyCode > option[data-area-code!='" + AreaCode + "']").hide();
+            //$("#selectCountry > option[data-area-code='" + AreaCode + "']")[0].attr("selected","selected");
+            //alert($(this));
+            //var plzSelect = $("#selectCountry option[value='-1']");
+
+            //$("#selectCountry").val("plz select");
+            //$(plzSelect).show().attr("selected","selected");
+
+            //alert($("#selectCountry option[value]='-1'").length);
+        });
+
+
+        $("#btnQuery").click(function () {
+
+            var CountryName = "test";
+            var WeatherCountyCode = "1111";
+            $("#queryForm").submit();
+            //$.post(
+            // "@Url.Action("DoQuery") ",
+            //{CountryName:'test',WeatherCountyCode:'100'}
+            //);
+
+        });
+    });
+</script>
+
+</form>

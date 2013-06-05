@@ -1,0 +1,12 @@
+C:\workspace\website\WeatherHelper\WeatherHelper\bin\WeatherHelper.dll
+C:\workspace\website\WeatherHelper\WeatherHelper\bin\WeatherHelper.pdb
+C:\workspace\website\WeatherHelper\WeatherHelper\bin\EntityFramework.dll
+C:\workspace\website\WeatherHelper\WeatherHelper\bin\EntityFramework.xml
+C:\workspace\website\WeatherHelper\WeatherHelper\obj\Debug\WeatherHelper.csprojResolveAssemblyReference.cache
+C:\workspace\website\WeatherHelper\WeatherHelper\obj\Debug\WeatherHelper.dll
+C:\workspace\website\WeatherHelper\WeatherHelper\obj\Debug\WeatherHelper.pdb
+C:\workspace\website\WeatherHelper\WeatherHelper\bin\WeatherAPIServices.dll
+C:\workspace\website\WeatherHelper\WeatherHelper\bin\WeatherAPIServices.pdb
+C:\workspace\website\WeatherHelper\WeatherHelper\bin\CommonLib.dll
+C:\workspace\website\WeatherHelper\WeatherHelper\bin\CommonLib.pdb
+C:\workspace\website\WeatherHelper\WeatherHelper\bin\Config\CityAndArea.xml

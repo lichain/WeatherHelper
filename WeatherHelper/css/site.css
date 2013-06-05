@@ -1,0 +1,93 @@
+﻿.HeaderTitle{padding:5px;}
+.backIndex{float:right; width:50px; height:50px; position:absolute;top:35px;left:1220px;}
+.SelectButton{width:100%; height:100%; margin:auto; vertical-align:middle; padding:20px;}
+.SelectButton button{width:400px;  height:300px;font-size:27pt; border-radius: 50px 0 0 50px;margin: 5px;}
+.Content{padding:25px;}
+.MapContent{padding:10px; }
+.JobContent{padding:5px  5px 5px 20px;}
+.colleges{display:block;width:auto;}
+.depts{display:inline-block; margin: -200px 250px 25px;}
+html body div.Content div#Detail_Context.depts a button.btn-large{ margin-bottom:10px; width:280px;}
+.UserInfo{position:absolute; top:150px; left:700px;}
+.UserInfo2{position:absolute; top:150px; left:970px;}
+.btnUserJob{width:180px;}
+.RoomTitle{font-size:20px;font-weight: bold;}
+.td_title{padding-top:15px;}
+html body div.JobContent table tbody tr td{padding-right:5px;}
+.title{display:inline-block;padding: 5px 10px; vertical-align:middle;margin: 0 0 10px;font-size:14pt;}
+.th_title{width:25%;}
+
+
+html body div.Content div#circle_red span{ position:relative;}
+#circle_red 
+{
+    width: 200px;
+    height: 200px;
+    background: red;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 100px;
+    font-size:17pt;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+#circle_blue {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 100px;
+    font-size:17pt;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+#circle_green {
+    width: 200px;
+    height: 200px;
+    background: #6BDC00;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 100px;
+    font-size:17pt;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+#circle_college4 {
+    width: 200px;
+    height: 200px;
+    background: #7100DC;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 100px;
+    font-size:17pt;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+#circle_college5 {
+    width: 200px;
+    height: 200px;
+    background: #FF1989;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 100px;
+    font-size:17pt;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+#circle_college6 {
+    width: 200px;
+    height: 200px;
+    background: #DC7100;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 100px;
+    font-size:17pt;
+    color:#FFFFFF;
+    font-weight: bold;
+}

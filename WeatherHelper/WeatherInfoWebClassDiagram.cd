@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WeatherHelper.Controllers.AccountController">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAgAAAAAAAAAAAAAABAAAEAAAAAAQAIAA=</HashCode>
+      <FileName>Controllers\AccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherHelper.Controllers.AdvancedQueryController">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\AdvancedQueryController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherHelper.Controllers.HomeController">
+    <Position X="1.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherHelper.Controllers.NotifyCenterController">
+    <Position X="10" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\NotifyCenterController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherHelper.Controllers.QueryController">
+    <Position X="3" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\QueryController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherHelper.Controllers.ReportController">
+    <Position X="10" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\ReportController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherHelper.MvcApplication">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAIQAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherHelper.Models.ChangePasswordModel">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAEAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Models\AccountModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherHelper.Models.LogOnModel">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQAAAAAgAAA=</HashCode>
+      <FileName>Models\AccountModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherHelper.Models.RegisterModel">
+    <Position X="8.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAQAAAAAAIAA=</HashCode>
+      <FileName>Models\AccountModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherHelper.Models.GPSLocation">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\GPSLocation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherHelper.Models.QureyWeatherInfo">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAgAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Models\QureyWeatherInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherHelper.Models.WeatherInfo">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEARAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\WeatherInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherHelper.Models.WeatherReport">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\WeatherReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="WeatherHelper.Models.WeatherStatus">
+    <Position X="6.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAABAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Models\WeatherInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft JhengHei UI" Size="9" />
+</ClassDiagram>

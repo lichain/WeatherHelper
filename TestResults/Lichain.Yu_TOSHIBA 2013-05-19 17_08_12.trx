@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="862cb23f-5643-4f9f-b65e-92d9528d7135" name="Lichain.Yu@TOSHIBA 2013-05-19 17:08:12" runUser="TOSHIBA\Lichain.Yu" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="7a20ad6c-2a23-4662-878a-50b1f3534cde">
+    <Deployment runDeploymentRoot="Lichain.Yu_TOSHIBA 2013-05-19 17_08_12">
+      <DeploymentItem filename="C:\workspace\website\WeatherHelper\WeatherHelper\bin\WeatherHelper.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-05-19T17:08:12.0383742+08:00" queuing="2013-05-19T17:08:12.2665216+08:00" start="2013-05-19T17:08:12.3285632+08:00" finish="2013-05-19T17:08:12.9769974+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="About" storage="c:\workspace\website\weatherhelper\weatherhelper.testprject\bin\debug\weatherhelper.testprject.dll" id="b874e951-1584-18b4-52d7-0541ac1cb04b">
+      <Execution id="603626d3-dbb4-4e58-9fad-d831de241baf" />
+      <TestMethod codeBase="C:/workspace/website/WeatherHelper/WeatherHelper.TestPrject/bin/Debug/WeatherHelper.TestPrject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WeatherHelper.TestPrject.Controllers.HomeControllerTest, WeatherHelper.TestPrject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="About" />
+    </UnitTest>
+    <UnitTest name="Index" storage="c:\workspace\website\weatherhelper\weatherhelper.testprject\bin\debug\weatherhelper.testprject.dll" id="38e796a4-fc51-0666-bd20-9514c8f2f9ed">
+      <Execution id="253f7662-632c-4f2a-ac81-099518beaf55" />
+      <TestMethod codeBase="C:/workspace/website/WeatherHelper/WeatherHelper.TestPrject/bin/Debug/WeatherHelper.TestPrject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WeatherHelper.TestPrject.Controllers.HomeControllerTest, WeatherHelper.TestPrject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="38e796a4-fc51-0666-bd20-9514c8f2f9ed" executionId="253f7662-632c-4f2a-ac81-099518beaf55" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b874e951-1584-18b4-52d7-0541ac1cb04b" executionId="603626d3-dbb4-4e58-9fad-d831de241baf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="253f7662-632c-4f2a-ac81-099518beaf55" testId="38e796a4-fc51-0666-bd20-9514c8f2f9ed" testName="Index" computerName="TOSHIBA" duration="00:00:00.1738612" startTime="2013-05-19T17:08:12.3355712+08:00" endTime="2013-05-19T17:08:12.8989451+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="253f7662-632c-4f2a-ac81-099518beaf55">
+    </UnitTestResult>
+    <UnitTestResult executionId="603626d3-dbb4-4e58-9fad-d831de241baf" testId="b874e951-1584-18b4-52d7-0541ac1cb04b" testName="About" computerName="TOSHIBA" duration="00:00:00.0002777" startTime="2013-05-19T17:08:12.8999461+08:00" endTime="2013-05-19T17:08:12.9029478+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="603626d3-dbb4-4e58-9fad-d831de241baf">
+    </UnitTestResult>
+  </Results>
+</TestRun>

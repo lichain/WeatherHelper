@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WeatherCodeConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Area AreaCode="1"	Name="臺北市" />
+    <Area AreaCode="2"	Name="高雄市" />
+    <Area AreaCode="3"	Name="新北市" />
+    <Area AreaCode="4"	Name="台中市" />
+    <Area AreaCode="5"	Name="台南市" />
+    <Area AreaCode="6"	Name="宜蘭縣" />
+    <Area AreaCode="7"	Name="桃園縣" />
+    <Area AreaCode="8"	Name="新竹縣" />
+    <Area AreaCode="9"	Name="苗栗縣" />
+    <Area AreaCode="10"	Name="彰化縣" />
+    <Area AreaCode="11"	Name="南投縣" />
+    <Area AreaCode="12"	Name="雲林縣" />
+    <Area AreaCode="13"	Name="嘉義縣" />
+    <Area AreaCode="14"	Name="屏東縣" />
+    <Area AreaCode="15"	Name="台東縣" />
+    <Area AreaCode="16"	Name="花蓮縣" />
+    <Area AreaCode="17"	Name="澎湖縣" />
+    <Area AreaCode="18"	Name="基隆市" />
+    <Area AreaCode="19"	Name="新竹市" />
+    <Area AreaCode="20"	Name="嘉義市" />
+    <Area AreaCode="21"	Name="連江縣" />
+    <Area AreaCode="22"	Name="金門縣" />
+
+    <WeatherCode WeatherCountyCode="20070332"	  Name="金湖鎮"				AreaCode="22" />
+    <WeatherCode WeatherCountyCode="20070335"	  Name="信義鄉"				AreaCode="11" />
+    <WeatherCode WeatherCountyCode="20070568"	  Name="內湖區"				AreaCode="1"  />
+    <WeatherCode WeatherCountyCode="20070569"	  Name="烏來區"				AreaCode="3"  />
+    <WeatherCode WeatherCountyCode="20070570"	  Name="六龜區"				AreaCode="2"  />
+    <WeatherCode WeatherCountyCode="20070572"	  Name="埔鹽鄉"				AreaCode="10" />
+    <WeatherCode WeatherCountyCode="22695855"	  Name="七堵區"				AreaCode="18" />
+    <WeatherCode WeatherCountyCode="22695856"	  Name="西嶼鄉"				AreaCode="17" />
+    <WeatherCode WeatherCountyCode="2295794"		Name="旗山區"				AreaCode="2"  />
+    <WeatherCode WeatherCountyCode="2296315"		Name="嘉義市"				AreaCode="13" />
+    <WeatherCode WeatherCountyCode="2296872"		Name="竹東鎮"				AreaCode="8"  />
+    <WeatherCode WeatherCountyCode="2297839"		Name="恆春鎮"				AreaCode="14" />
+    <WeatherCode WeatherCountyCode="2301128"		Name="苗栗市"				AreaCode="9"  />
+    <WeatherCode WeatherCountyCode="2303611"		Name="豐原區"				AreaCode="4"  />
+    <WeatherCode WeatherCountyCode="2304594"		Name="大武鄉"				AreaCode="15" />
+    <WeatherCode WeatherCountyCode="2347336"		Name="大同鄉"				AreaCode="6"  />
+    <WeatherCode WeatherCountyCode="2306179"		Name="內湖區"				AreaCode="1"  />
+    <WeatherCode WeatherCountyCode="2306180"		Name="左營區"				AreaCode="2"  />
+    <WeatherCode WeatherCountyCode="2306181"		Name="西屯區"				AreaCode="4"  />
+    <WeatherCode WeatherCountyCode="2306182"		Name="安平區"				AreaCode="5"  />
+    <WeatherCode WeatherCountyCode="2306183"		Name="彰化市"				AreaCode="10" />
+    <WeatherCode WeatherCountyCode="2306184"		Name="中壢市"				AreaCode="7"  />
+    <WeatherCode WeatherCountyCode="2306185"		Name="北區"				  AreaCode="19" />
+    <WeatherCode WeatherCountyCode="2306186"		Name="新店區"				AreaCode="3"  />
+    <WeatherCode WeatherCountyCode="2306187"		Name="花蓮市"				AreaCode="16" />
+    <WeatherCode WeatherCountyCode="2306188"		Name="七堵區"				AreaCode="18" />
+    <WeatherCode WeatherCountyCode="2306189"		Name="屏東市"				AreaCode="14" />
+    <WeatherCode WeatherCountyCode="2306190"		Name="台東市"				AreaCode="15" />
+    <WeatherCode WeatherCountyCode="2306193"		Name="佳里區"				AreaCode="5"  />
+    <WeatherCode WeatherCountyCode="2306194"		Name="清水區"				AreaCode="4"  />
+    <WeatherCode WeatherCountyCode="2306195"		Name="二林鎮"				AreaCode="10" />
+    <WeatherCode WeatherCountyCode="2306198"		Name="宜蘭市"				AreaCode="6"  />
+    <WeatherCode WeatherCountyCode="2306199"		Name="岡山區"				AreaCode="2"  />
+    <WeatherCode WeatherCountyCode="2306200"		Name="觀音鄉"				AreaCode="7"  />
+    <WeatherCode WeatherCountyCode="2306201"		Name="鹿港鎮"				AreaCode="10" />
+    <WeatherCode WeatherCountyCode="2306202"		Name="龍潭鄉"				AreaCode="7"  />
+    <WeatherCode WeatherCountyCode="2306203"		Name="麻豆區"				AreaCode="5"  />
+    <WeatherCode WeatherCountyCode="2306204"		Name="南投市"				AreaCode="11" />
+    <WeatherCode WeatherCountyCode="2306206"		Name="布袋鎮"				AreaCode="13" />
+    <WeatherCode WeatherCountyCode="2306207"		Name="石岡區"				AreaCode="4"  />
+    <WeatherCode WeatherCountyCode="2306208"		Name="蘇澳鎮"				AreaCode="6"  />
+    <WeatherCode WeatherCountyCode="2306209"		Name="大園鄉"				AreaCode="7"  />
+    <WeatherCode WeatherCountyCode="2306210"		Name="大甲區"				AreaCode="4"  />
+    <WeatherCode WeatherCountyCode="2306211"		Name="淡水區"				AreaCode="3"  />
+    <WeatherCode WeatherCountyCode="2306212"		Name="斗南鎮"				AreaCode="12" />
+    <WeatherCode WeatherCountyCode="2306213"		Name="東港鎮"						AreaCode="14" />
+    <WeatherCode WeatherCountyCode="2306214"		Name="鶯歌區"						AreaCode="3"  />
+    <WeatherCode WeatherCountyCode="2306217"		Name="新化區"						AreaCode="5"  />
+    <WeatherCode WeatherCountyCode="2306218"		Name="新社區"						AreaCode="4"  />
+    <WeatherCode WeatherCountyCode="2306223"		Name="金山區"						AreaCode="2"  />
+    <WeatherCode WeatherCountyCode="2306224"		Name="枋山鄉"						AreaCode="14" />
+    <WeatherCode WeatherCountyCode="2306226"		Name="和平區"						AreaCode="4"  />
+    <WeatherCode WeatherCountyCode="2306227"		Name="關山鎮"						AreaCode="15" />
+    <WeatherCode WeatherCountyCode="2306228"		Name="三芝區"						AreaCode="3"  />
+    <WeatherCode WeatherCountyCode="2306229"		Name="三灣鄉"						AreaCode="9"  />
+    <WeatherCode WeatherCountyCode="2306231"		Name="萬里區"						AreaCode="3"  />
+    <WeatherCode WeatherCountyCode="2306232"		Name="玉井區"						AreaCode="5"  />
+    <WeatherCode WeatherCountyCode="2306243"		Name="南澳鄉"						AreaCode="6"  />
+    <WeatherCode WeatherCountyCode="2306250"		Name="虎尾鎮"						AreaCode="12" />
+    <WeatherCode WeatherCountyCode="2306251"		Name="雙溪區"						AreaCode="3"  />
+    <WeatherCode WeatherCountyCode="2306254"		Name="桃園國際機場"			AreaCode="7"  />
+    <WeatherCode WeatherCountyCode="2306255"		Name="高雄國際機場"			AreaCode="2"  />
+    <WeatherCode WeatherCountyCode="2347334"		Name="橫山鄉"						AreaCode="8"  />
+    <WeatherCode WeatherCountyCode="2347335"		Name="秀林鄉"						AreaCode="16" />
+    <WeatherCode WeatherCountyCode="2347336"		Name="大同鄉"						AreaCode="6"  />
+    <WeatherCode WeatherCountyCode="2347338"		Name="公館鄉"						AreaCode="9"  />
+    <WeatherCode WeatherCountyCode="2347339"		Name="信義鄉"						AreaCode="11" />
+    <WeatherCode WeatherCountyCode="2347340"		Name="萬巒鄉"						AreaCode="14" />
+    <WeatherCode WeatherCountyCode="2347344"		Name="延平鄉"						AreaCode="15" />
+    <WeatherCode WeatherCountyCode="2347345"		Name="中壢市"						AreaCode="7"  />
+    <WeatherCode WeatherCountyCode="2347346"		Name="虎尾鎮"						AreaCode="12" />
+    <WeatherCode WeatherCountyCode="12703515"		Name="中正區"						AreaCode="1"  />
+    <WeatherCode WeatherCountyCode="12703525"		Name="文山區"						AreaCode="1"  />
+    <WeatherCode WeatherCountyCode="12703534"		Name="香山區"						AreaCode="19" />
+    <WeatherCode WeatherCountyCode="12703539"		Name="北區"							AreaCode="4"  />
+    <WeatherCode WeatherCountyCode="12703543"		Name="彰化市"						AreaCode="10" />
+    <WeatherCode WeatherCountyCode="12703556"		Name="鼓山區"						AreaCode="2"  />
+    <WeatherCode WeatherCountyCode="12703563"		Name="屏東市"						AreaCode="14" />
+    <WeatherCode WeatherCountyCode="23424971"		Name="信義鄉"						AreaCode="11" />
+    <WeatherCode WeatherCountyCode="28751581"		Name="善化區"						AreaCode="5"  />
+    <WeatherCode WeatherCountyCode="28751582"		Name="香山區"						AreaCode="19" />
+    <WeatherCode WeatherCountyCode="28751583"		Name="東區"							AreaCode="13" />
+    <WeatherCode WeatherCountyCode="28751584"		Name="和平區"						AreaCode="4"  />
+    <WeatherCode WeatherCountyCode="28752011"		Name="南區"							AreaCode="5"  />
+    <WeatherCode WeatherCountyCode="28752322"		Name="淡水區"						AreaCode="3"  />
+    <WeatherCode WeatherCountyCode="28752396"		Name="花蓮市"						AreaCode="16" />
+    <WeatherCode WeatherCountyCode="28752472"		Name="桃園市"						AreaCode="7"  />
+    <WeatherCode WeatherCountyCode="28760734"		Name="馬祖島"						AreaCode="21" />
+    <WeatherCode WeatherCountyCode="28760735"		Name="金湖鎮"						AreaCode="22" />
+    <WeatherCode WeatherCountyCode="55863654"		Name="太魯閣國家公園"		AreaCode="16" />
+    <WeatherCode WeatherCountyCode="7153409"	  Name="番路鄉"						AreaCode="13" />
+  
+</WeatherCodeConfiguration>

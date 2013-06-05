@@ -1,0 +1,7 @@
+C:\workspace\website\WeatherHelper\WeatherAPIServices\bin\Debug\WeatherAPIServices.dll
+C:\workspace\website\WeatherHelper\WeatherAPIServices\bin\Debug\WeatherAPIServices.pdb
+C:\workspace\website\WeatherHelper\WeatherAPIServices\obj\Debug\WeatherAPIServices.dll
+C:\workspace\website\WeatherHelper\WeatherAPIServices\obj\Debug\WeatherAPIServices.pdb
+C:\workspace\website\WeatherHelper\WeatherAPIServices\obj\Debug\WeatherAPIServices.csprojResolveAssemblyReference.cache
+C:\workspace\website\WeatherHelper\WeatherAPIServices\bin\Debug\CommonLib.dll
+C:\workspace\website\WeatherHelper\WeatherAPIServices\bin\Debug\CommonLib.pdb
