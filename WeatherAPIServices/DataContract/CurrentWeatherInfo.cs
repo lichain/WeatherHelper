@@ -7,6 +7,11 @@ namespace WeatherAPIServices.DataContract
 {
     public class CurrentWeatherInfo : WeatherInfo
     {
+        public string AreaName { get; set; }
+        public string AreaCode { get; set; }
+        public string CountryName { get; set; }
+        public string WCCode { get; set; }
+        public string QueryDate { get; set; }
         public string Temperature { get; set; }
         public string Skycode { get; set; }
         public string Skytext { get; set; }
@@ -16,5 +21,23 @@ namespace WeatherAPIServices.DataContract
         public string Humidity { get; set; }   //濕度
         public string Windspeed { get; set; } //風速
         public string Winddisplay { get; set; }
+        public string SkycodeImg
+        {
+            get
+            {
+                return "http://wst.s-msn.com/i/en-us/law/" + this.Skycode + ".gif";
+            }
+        }
+
+        public WeatherAPIServices.Services.ParserService ParserService
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
     }
 }

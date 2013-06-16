@@ -62,9 +62,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdvancedQueryController.cs" />
-    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NotifyCenterController.cs" />
     <Compile Include="Controllers\QueryController.cs" />
@@ -73,7 +71,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="HtmlHelper\SelectHelper.cs" />
-    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ErrorPageModel.cs" />
     <Compile Include="Models\QueryResultViewModel.cs" />
     <Compile Include="Models\QueryViewModel.cs" />
     <Compile Include="Models\QureyWeatherInfo.cs" />
@@ -86,7 +84,6 @@
     <Content Include="Config\CityAndArea.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Config\Country.xml" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -130,6 +127,7 @@
     <Content Include="js\bootstrap-datetimepicker.min.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.blockUI.js" />
     <Content Include="Scripts\Common.js" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.5.1.js" />
@@ -162,11 +160,6 @@
     <Content Include="Scripts\MicrosoftMvcValidation.js" />
     <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Account\ChangePassword.cshtml" />
-    <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
-    <Content Include="Views\Account\LogOn.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
@@ -187,6 +180,7 @@
     <Content Include="Views\Report\Index.cshtml" />
     <Content Include="Views\Query\Result.cshtml" />
     <Content Include="Views\Shared\NotFound.cshtml" />
+    <Content Include="Views\AdvancedQuery\Result.cshtml" />
     <None Include="WeatherInfoWebClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>

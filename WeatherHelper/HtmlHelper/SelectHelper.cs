@@ -40,5 +40,21 @@ namespace WeatherHelper.HtmlHelper
 
             return retHtml.ToString();
         }
+
+        public static string WCCountryControl(string SelectID, string AreaCode = "")
+        {
+            List<WCCountry> WCCountries = CityAndAreaConfig.Instance.getWCCountryByAreaCode(AreaCode);
+            StringBuilder retHtml = new StringBuilder();
+
+            retHtml.Append(string.Format("<select id={0} name={0} >", SelectID));
+            retHtml.Append("<option value=\"-1\" selected=\"selected\">請選擇</optnion>");
+            foreach (var item in WCCountries)
+            {
+                retHtml.Append(string.Format("<option value=\"{0}\" data-area-code=\"{1}\" >{2}</optnion>", item.WCCode, item.AreaCode, item.Name));
+            }
+            retHtml.Append("</select>");
+
+            return retHtml.ToString();
+        }
     }
 }

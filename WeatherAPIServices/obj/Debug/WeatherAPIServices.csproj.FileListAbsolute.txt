@@ -5,3 +5,11 @@ C:\workspace\website\WeatherHelper\WeatherAPIServices\obj\Debug\WeatherAPIServic
 C:\workspace\website\WeatherHelper\WeatherAPIServices\obj\Debug\WeatherAPIServices.csprojResolveAssemblyReference.cache
 C:\workspace\website\WeatherHelper\WeatherAPIServices\bin\Debug\CommonLib.dll
 C:\workspace\website\WeatherHelper\WeatherAPIServices\bin\Debug\CommonLib.pdb
+C:\workspace\website\WeatherHelper\WeatherAPIServices\bin\Debug\Config\CityAndArea.xml
+C:\workspace\website\WeatherHelper\WeatherAPIServices\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+C:\workspace\website\WeatherHelper\WeatherAPIServices\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\workspace\website\WeatherHelper\WeatherAPIServices\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\workspace\website\WeatherHelper\WeatherAPIServices\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\workspace\website\WeatherHelper\WeatherAPIServices\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\workspace\website\WeatherHelper\WeatherAPIServices\bin\Debug\Microsoft.Practices.Unity.dll
+C:\workspace\website\WeatherHelper\WeatherAPIServices\bin\Debug\Microsoft.Practices.Unity.Interception.dll

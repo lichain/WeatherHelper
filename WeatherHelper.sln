@@ -12,28 +12,112 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherAPIServices", "Weath
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLib", "CommonLib\CommonLib.csproj", "{F411D6FF-D56D-4DAB-8121-F1745C68DD87}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C581505F-EB7F-468A-8E52-00CECD5CF337}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		WeatherHelper.vsmdi = WeatherHelper.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoCatchDataProgram", "AutoCatchDataProgram\AutoCatchDataProgram.csproj", "{5B6DA2F9-58C0-40F2-9B04-5AD1B33620D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{5C175ECD-13FA-438C-9F5E-C72D7F39B233}"
+	ProjectSection(SolutionItems) = preProject
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Caching.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Common.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Data.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Logging.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Security.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Security.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Validation.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Validation.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WPF.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WPF.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.ServiceLocation.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.ServiceLocation.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.Unity.Configuration.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.Unity.Configuration.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.Unity.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.Unity.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.Unity.Interception.Configuration.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.Unity.Interception.Configuration.dll
+		Libraries\Enterprise Library 5.0\Microsoft.Practices.Unity.Interception.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.Unity.Interception.dll
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WeatherHelper.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FC1BA7BB-3082-4028-9302-B593054553B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FC1BA7BB-3082-4028-9302-B593054553B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC1BA7BB-3082-4028-9302-B593054553B4}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FC1BA7BB-3082-4028-9302-B593054553B4}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FC1BA7BB-3082-4028-9302-B593054553B4}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{FC1BA7BB-3082-4028-9302-B593054553B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC1BA7BB-3082-4028-9302-B593054553B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC1BA7BB-3082-4028-9302-B593054553B4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FC1BA7BB-3082-4028-9302-B593054553B4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FC1BA7BB-3082-4028-9302-B593054553B4}.Release|x86.ActiveCfg = Release|Any CPU
 		{DCDBC7B6-17B9-4749-A6EC-DEA50E86EF9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DCDBC7B6-17B9-4749-A6EC-DEA50E86EF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCDBC7B6-17B9-4749-A6EC-DEA50E86EF9D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DCDBC7B6-17B9-4749-A6EC-DEA50E86EF9D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DCDBC7B6-17B9-4749-A6EC-DEA50E86EF9D}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{DCDBC7B6-17B9-4749-A6EC-DEA50E86EF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCDBC7B6-17B9-4749-A6EC-DEA50E86EF9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCDBC7B6-17B9-4749-A6EC-DEA50E86EF9D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DCDBC7B6-17B9-4749-A6EC-DEA50E86EF9D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DCDBC7B6-17B9-4749-A6EC-DEA50E86EF9D}.Release|x86.ActiveCfg = Release|Any CPU
 		{C5D850BC-1A19-446F-917D-78B29AC66BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C5D850BC-1A19-446F-917D-78B29AC66BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D850BC-1A19-446F-917D-78B29AC66BAA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C5D850BC-1A19-446F-917D-78B29AC66BAA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C5D850BC-1A19-446F-917D-78B29AC66BAA}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{C5D850BC-1A19-446F-917D-78B29AC66BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5D850BC-1A19-446F-917D-78B29AC66BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5D850BC-1A19-446F-917D-78B29AC66BAA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C5D850BC-1A19-446F-917D-78B29AC66BAA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C5D850BC-1A19-446F-917D-78B29AC66BAA}.Release|x86.ActiveCfg = Release|Any CPU
 		{F411D6FF-D56D-4DAB-8121-F1745C68DD87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F411D6FF-D56D-4DAB-8121-F1745C68DD87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F411D6FF-D56D-4DAB-8121-F1745C68DD87}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F411D6FF-D56D-4DAB-8121-F1745C68DD87}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F411D6FF-D56D-4DAB-8121-F1745C68DD87}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{F411D6FF-D56D-4DAB-8121-F1745C68DD87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F411D6FF-D56D-4DAB-8121-F1745C68DD87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F411D6FF-D56D-4DAB-8121-F1745C68DD87}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F411D6FF-D56D-4DAB-8121-F1745C68DD87}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F411D6FF-D56D-4DAB-8121-F1745C68DD87}.Release|x86.ActiveCfg = Release|Any CPU
+		{5B6DA2F9-58C0-40F2-9B04-5AD1B33620D4}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{5B6DA2F9-58C0-40F2-9B04-5AD1B33620D4}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{5B6DA2F9-58C0-40F2-9B04-5AD1B33620D4}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{5B6DA2F9-58C0-40F2-9B04-5AD1B33620D4}.Debug|x86.ActiveCfg = Debug|x86
+		{5B6DA2F9-58C0-40F2-9B04-5AD1B33620D4}.Debug|x86.Build.0 = Debug|x86
+		{5B6DA2F9-58C0-40F2-9B04-5AD1B33620D4}.Release|Any CPU.ActiveCfg = Release|x86
+		{5B6DA2F9-58C0-40F2-9B04-5AD1B33620D4}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{5B6DA2F9-58C0-40F2-9B04-5AD1B33620D4}.Release|Mixed Platforms.Build.0 = Release|x86
+		{5B6DA2F9-58C0-40F2-9B04-5AD1B33620D4}.Release|x86.ActiveCfg = Release|x86
+		{5B6DA2F9-58C0-40F2-9B04-5AD1B33620D4}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

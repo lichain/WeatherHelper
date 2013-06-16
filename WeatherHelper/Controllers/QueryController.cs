@@ -11,63 +11,87 @@ using WeatherHelper.Models;
 
 namespace WeatherHelper.Controllers
 {
-    public class QueryController : BaseController
+    public class QueryController : Controller
     {
+        public WeatherAPIServices.Services.QueryServices QueryServices
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
         //
         // GET: /Query/
 
         public ActionResult Index()
         {
-            List<Area> Areas = CityAndAreaConfig.Instance.getAreaList();
-            List<Country> country = CityAndAreaConfig.Instance.getCountryByAreaCode("1");
+            //List<Area> Areas = CityAndAreaConfig.Instance.getAreaList();
+            //List<Country> country = CityAndAreaConfig.Instance.getCountryByAreaCode("1");
 
-            string clientIP = GPSLocationService.GetClientIP();
+            //string clientIP = GPSLocationService.GetClientIP();
                                                                                                               
-            //string result = GPSLocation.GetMaxMindOmniData("203.74.123.39");
+            ////string result = GPSLocation.GetMaxMindOmniData("203.74.123.39");
 
-            GPSLocation gpsLocationInfo = GPSLocationService.GetClientGPSLocationInfo();
+            //GPSLocation gpsLocationInfo = GPSLocationService.GetClientGPSLocationInfo();
 
-            QueryWeatherRequest request = new QueryWeatherRequest();
-            request.GPSLocationInfo = gpsLocationInfo;
-            request.WeatherCountryCode = "TWXX0019";
-            request.QueryDateTime = DateTime.Now;
-            QueryWeatherResponse response = QueryServices.GetWeatherInfo(request);
+            //QueryWeatherRequest request = new QueryWeatherRequest();
+            //request.GPSLocationInfo = gpsLocationInfo;
+            //request.WeatherCountryCode = "TWXX0019";
+            //request.QueryDateTime = DateTime.Now;
+            //QueryWeatherResponse response = QueryServices.GetWeatherInfo(request);
 
             return View();
-        }
-
-        public ActionResult Result(QueryResultViewModel mode)
-        {
-            return View("Result");
         }
 
         [HttpPost]
         public ActionResult DoQuery(QueryViewModel model){
 
-            string WeatherCountyCode = "TWXX0021"; //台灣-台北
-
             try
             {
+                if (model == null)
+                    throw new ArgumentNullException("model");
+
                 //GPSLocation gpsLocationInfo = GPSLocationService.GetClientGPSLocationInfo();
 
                 QueryWeatherRequest request = new QueryWeatherRequest();
                 //request.GPSLocationInfo = gpsLocationInfo;
-                request.WeatherCountryCode = WeatherCountyCode;
+                request.AreaCode = model.AreaCode;
+                request.WCCode = model.WCCode;
                 request.QueryDateTime = DateTime.Now;
                 QueryWeatherResponse response = QueryServices.GetWeatherInfo(request);
+                response.CurrentDay.QueryDate = request.QueryDateTime.ToString("yyyy/MM/dd");
+                response.CurrentDay.AreaCode = model.AreaCode;
+                response.CurrentDay.AreaName = CityAndAreaConfig.Instance.getAreaNameByAreaCode(model.AreaCode);
+                response.CurrentDay.WCCode = model.WCCode;
+                response.CurrentDay.CountryName = CityAndAreaConfig.Instance.getWCCountryNameByWCCode(model.WCCode);
+                ViewBag.CurrentDay = response.CurrentDay;
+            }
+            catch (System.Net.WebException ex)
+            {
+                //ViewBag.ErrMsg = "網路斷線或遠端伺服器錯誤，請通知管理者";
+                ErrorPageModel errModel = new ErrorPageModel { 
+                    ErrorTitle = "Network Error", 
+                    ErrorMsg = "網路斷線或遠端伺服器錯誤，請通知管理者" };
+
+                return View("Error",errModel);
             }
             catch (System.Exception ex)
             {
-                return View("Error");	
+                
+                return View("Error");
             }
 
-            return RedirectToAction("Result");
+            return View("Result");
+            //return RedirectToAction("Result");
         }
 
         public JsonResult QueryWeatherInfo(string weatherCountyCode , string Date)
         {
             QueryWeatherRequest request = new QueryWeatherRequest();
-            request.WeatherCountryCode = weatherCountyCode;
+            request.WCCode = weatherCountyCode;
             QueryWeatherResponse response = QueryServices.GetWeatherInfo(request);
 
             return Json(new { WeatherInfo = response, IsSuccess = true, Msg = "" });

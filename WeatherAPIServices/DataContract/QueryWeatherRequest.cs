@@ -10,8 +10,20 @@ namespace WeatherAPIServices.DataContract
                 //public string CountyCode { get;set;}
                 //public County County { get; set; }
                 //public Area Area { get; set; }
+            public string AreaCode { get; set; }
             public GPSLocation GPSLocationInfo { get; set; }
-            public string WeatherCountryCode { get; set; }
+            public string WCCode { get; set; }
             public DateTime QueryDateTime { get; set; }
+
+            public WeatherAPIServices.Services.QueryServices QueryServices
+            {
+                get
+                {
+                    throw new System.NotImplementedException();
+                }
+                set
+                {
+                }
+            }
         }
 }

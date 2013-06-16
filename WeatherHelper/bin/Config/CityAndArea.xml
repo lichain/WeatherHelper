@@ -113,4 +113,53 @@
     <WeatherCode WeatherCountyCode="55863654"		Name="太魯閣國家公園"		AreaCode="16" />
     <WeatherCode WeatherCountyCode="7153409"	  Name="番路鄉"						AreaCode="13" />
   
+  <WC WC_Code="TWXX0001" Name="彰化 (彰化縣彰化市)"			AreaCode="10"       />
+<WC WC_Code="TWXX0002" Name="嘉義 (嘉義市西區)"			AreaCode="13"       />
+<WC WC_Code="TWXX0003" Name="基隆 (基隆市安樂區)"			AreaCode="18"       />
+<!--<WC WC_Code="TWXX0004" Name="景美 (台北市文山區)"			AreaCode="1"         />-->
+<WC WC_Code="TWXX0005" Name="旗山 (高雄市旗山區)"			AreaCode="2"         />
+<WC WC_Code="TWXX0006" Name="竹東 (新竹縣竹東鎮)"			AreaCode="8"         />
+<WC WC_Code="TWXX0007" Name="豐原 (台中市豐原區)"			AreaCode="4"         />
+<!--<WC WC_Code="TWXX0008" Name="恆春 (屏東縣恆春鎮)"			AreaCode="14"       />-->
+<WC WC_Code="TWXX0009" Name="新竹 (新竹市東區)"			AreaCode="19"       />
+<WC WC_Code="TWXX0010" Name="新店 (新北市新店區)"			AreaCode="3"         />
+<WC WC_Code="TWXX0011" Name="花蓮 (花蓮縣花蓮市)"			AreaCode="16"       />
+<!--<WC WC_Code="TWXX0012" Name="岡山 (高雄市岡山區)"			AreaCode="2"         />-->
+<!--<WC WC_Code="TWXX0013" Name="高雄 (高雄市鼓山區)"			AreaCode="2"         />-->
+<WC WC_Code="TWXX0014" Name="苗栗 (苗栗縣苗栗市)"			AreaCode="9"         />
+<WC WC_Code="TWXX0015" Name="屏東 (屏東縣屏東市)"			AreaCode="14"       />
+<WC WC_Code="TWXX0016" Name="蘇澳 (宜蘭縣蘇澳鎮)"			AreaCode="6"         />
+<WC WC_Code="TWXX0017" Name="大濁水 (宜蘭縣南澳鄉)"			AreaCode="6"     />
+<WC WC_Code="TWXX0018" Name="大板埒 (屏東縣南灣)"			AreaCode="14"       />
+<WC WC_Code="TWXX0019" Name="台中 (台中市北區)"			AreaCode="4"             />
+<!--<WC WC_Code="TWXX0020" Name="台南 (台南市南區)"			AreaCode="5"             />-->
+<WC WC_Code="TWXX0021" Name="台北 (台北市中山區)"			AreaCode="1"         />
+<!--<WC WC_Code="TWXX0022" Name="新北市 (新北市三重區)"			AreaCode="3"     />-->
+<!--<WC WC_Code="TWXX0023" Name="台東 (台東縣台東市)"			AreaCode="15"       />-->
+<WC WC_Code="TWXX0024" Name="淡水 (新北市淡水區)"			AreaCode="3"         />
+<WC WC_Code="TWXX0025" Name="桃園 (桃園縣桃園市)"			AreaCode="7"         />
+<WC WC_Code="TWXX0026" Name="大武 (台東縣大武鄉)"			AreaCode="15"       />
+<!--<WC WC_Code="TWXX0027" Name="恆春 (屏東縣恆春鎮)"			AreaCode="14"       />
+ <WC WC_Code="TWXX0028" Name="台東 (台東縣台東市)"			AreaCode="15"       />-->
+<WC WC_Code="10028648"    Name="板橋市"			AreaCode="3"        />
+<WC WC_Code="29496"	          Name="三重市"			AreaCode="3"        />
+<WC WC_Code="37364"	          Name="永和市"			AreaCode="3"        />
+<WC WC_Code="14392"     	    Name="新莊市"			AreaCode="3"        />
+<WC WC_Code="7371127" 	    Name="中壢市"			AreaCode="7"        />
+<WC WC_Code="10034496"    Name="竹南鎮"			AreaCode="9"        />
+<WC WC_Code="32433"     	    Name="台南"			    AreaCode="5"        />
+<WC WC_Code="10480429"    Name="永康市"			AreaCode="5"        />
+<WC WC_Code="16133"     	    Name="高雄"			    AreaCode="2"        />
+<WC WC_Code="10209491"    Name="鳳山市"			AreaCode="2"        />
+<WC WC_Code="24933"     	    Name="屏東"			    AreaCode="14"      />
+<WC WC_Code="7365022" 	    Name="鵝鑾鼻"			AreaCode="14"      />
+<WC WC_Code="32435"     	    Name="台東"			    AreaCode="15"      />
+<WC WC_Code="7372779" 	    Name="成功鎮"			AreaCode="15"      />
+<WC WC_Code="10209499"    Name="卑南鄉"			AreaCode="15"      />
+<WC WC_Code="7359057"	      Name="玉里鎮"			AreaCode="16"      />
+<WC WC_Code="7370247" 	    Name="富里鄉"			AreaCode="16"      />
+<WC WC_Code="10209389"     Name="光復鄉"			AreaCode="16"      />
+<WC WC_Code="10107142"    Name="馬公市"			AreaCode="17"      />
+<WC WC_Code="7359486" 	    Name="烏石鼻"			AreaCode="15"      />
+  
 </WeatherCodeConfiguration>

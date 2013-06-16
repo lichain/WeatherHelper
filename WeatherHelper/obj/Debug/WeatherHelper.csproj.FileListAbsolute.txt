@@ -10,3 +10,8 @@ C:\workspace\website\WeatherHelper\WeatherHelper\bin\WeatherAPIServices.pdb
 C:\workspace\website\WeatherHelper\WeatherHelper\bin\CommonLib.dll
 C:\workspace\website\WeatherHelper\WeatherHelper\bin\CommonLib.pdb
 C:\workspace\website\WeatherHelper\WeatherHelper\bin\Config\CityAndArea.xml
+C:\workspace\website\WeatherHelper\WeatherHelper\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\workspace\website\WeatherHelper\WeatherHelper\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\workspace\website\WeatherHelper\WeatherHelper\bin\Microsoft.Practices.ServiceLocation.dll
+C:\workspace\website\WeatherHelper\WeatherHelper\bin\Microsoft.Practices.Unity.dll
+C:\workspace\website\WeatherHelper\WeatherHelper\bin\Microsoft.Practices.Unity.Interception.dll

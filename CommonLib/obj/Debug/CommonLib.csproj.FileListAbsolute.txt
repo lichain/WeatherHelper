@@ -2,3 +2,4 @@ C:\workspace\website\WeatherHelper\CommonLib\bin\Debug\CommonLib.dll
 C:\workspace\website\WeatherHelper\CommonLib\bin\Debug\CommonLib.pdb
 C:\workspace\website\WeatherHelper\CommonLib\obj\Debug\CommonLib.dll
 C:\workspace\website\WeatherHelper\CommonLib\obj\Debug\CommonLib.pdb
+C:\workspace\website\WeatherHelper\CommonLib\obj\Debug\CommonLib.csprojResolveAssemblyReference.cache

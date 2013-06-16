@@ -1,58 +1,75 @@
-﻿@{
+﻿@using WeatherHelper.HtmlHelper
+@{
         ViewBag.Title = "Advanced Query";
 }
 
-<h2>Advanced Query</h2>
 
-<select id="county">
-<option value="10017">基隆市</option>
-<option value="63000">臺北市</option>
-<option value="65000">新北市</option>
-<option value="10003">桃園縣</option>
-<option value="10018">新竹市</option>
-<option value="10004">新竹縣</option>
-<option value="10005">苗栗縣</option>
-<option value="66000">臺中市</option>
-<option value="10007">彰化縣</option>
-<option value="10008">南投縣</option>
-<option value="10009">雲林縣</option>
-<option value="10020">嘉義市</option>
-<option value="10010">嘉義縣</option>
-<option value="67000">臺南市</option>
-<option value="64000">高雄市</option>
-<option value="10013">屏東縣</option>
-<option value="10014">臺東縣</option>
-<option value="10015">花蓮縣</option>
-<option value="10002">宜蘭縣</option>
-<option value="10016">澎湖縣</option>
-<option value="9020">金門縣</option>
-<option value="9007">連江縣</option>
-</select>
+<link href="@Url.Content("~/css/bootstrap-datetimepicker.min.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/js/bootstrap-datetimepicker.min.js")" type="text/javascript"></script>
+<form id="queryForm" method="POST" action="@Url.Action("DoQuery")">
+<h2>
+    Advanced Query</h2>
+<div>
+    <table class="table table-striped">
+        <tr>
+            <th class="th_title">
+                <span class="title">地點(ex:台北市...)</span>
+            </th>
+            <td>
+                <span class="Title">縣市：</span>@Html.Raw(SelectHelper.AreaControl("AreaCode"))
+                <span class="Title">地區：</span>@Html.Raw(SelectHelper.WCCountryControl("WCCode"))
+            </td>
+        </tr>
+        <tr>
+            <th class="th_title">
+                <span class="title">日期</span>
+            </th>
+            <td>
+                <div class="well">
+                    <div id="datetimepicker1" class="input-append date">
+                        <input id="CurrentDate" name="CurrentDate" data-format="yyyy/MM/dd" type="text" disabled="disabled"></input>
+                        <span class="add-on"><i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+                        </span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <span id="btnQuery" class="btn btn-primary btn-large ">Query</span> <a href="./"><span
+        id="btnCancel" class="btn btn-primary btn-large ">Cancel</span></a>
+</div>
+<script type="text/javascript">
+    $(function () {
+        myUnBlcokUI();
+        var datepicker1 = $('#datetimepicker1');
+        datepicker1.datetimepicker();
+        $("#datetimepicker1 > input").val(getNow());
+
+        //var selectAreaID = 'selectArea';
+        //var selectCountryID = 'selectCountry';
+
+        //$("#selectCountry > option[data-area-code!='" + "2" + "']").hide();
+
+        $("#AreaCode").change(function () {
+            $("#WCCode").val("");
+            var AreaCode = $("#AreaCode option:selected").attr("value");
+            $("#WCCode > option").show();
+            $("#WCCode > option[data-area-code!='" + AreaCode + "']").hide();
+        });
 
 
-<select id="town">
-    <script language="JavaScript">        show_town(10017, 1001704);</script>
-    <option value="1001704">仁愛區</option>
-    <option value="1001707">信義區</option>
-    <option value="1001701">中正區</option>
-    <option value="1001705">中山區</option>
-    <option value="1001706">安樂區</option>
-    <option value="1001703">暖暖區</option>
-    <option value="1001702">七堵區</option>
-</select>
+        $("#btnQuery").click(function () {
+            var areacode = $("#AreaCode").val();
+            var countrycode = $("#WCCode").val();
 
-<select id="town">
-    <script language="JavaScript">show_town(63000, 6300500);</script>
-    <option value="6300500">中正區</option>
-    <option value="6300600">大同區</option>
-    <option value="6300400">中山區</option>
-    <option value="6300100">松山區</option>
-    <option value="6300300">大安區</option>
-    <option value="6300700">萬華區</option>
-    <option value="6300200">信義區</option>
-    <option value="6301100">士林區</option>
-    <option value="6301200">北投區</option>
-    <option value="6301000">內湖區</option>
-    <option value="6300900">南港區</option>
-    <option value="6300800">文山區</option>
-</select>
+            if(areacode == -1 || areacode ==null || countrycode == -1 || countrycode == null)
+            {
+                alert("請選擇縣市和地區!");
+                return false;
+            }
+            myBlockUI();
+            $("#queryForm").submit();
+        });
+    });
+</script>
+</form>

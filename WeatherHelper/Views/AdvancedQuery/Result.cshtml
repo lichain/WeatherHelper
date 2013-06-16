@@ -1,0 +1,61 @@
+﻿@using WeatherAPIServices.DataContract
+@{
+    ViewBag.Title = "Result";
+    CurrentWeatherInfo todayinfo = ViewBag.CurrentDay;
+    List<WeatherInfo> otherdays = ViewBag.OtherDays;
+}
+<legend>
+    <h2>
+        Result</h2>
+</legend>
+<div class="skyimg">
+    <div class="img_content1">
+        <img width="55" height="45" title="@todayinfo.WeatherStatus" src="@todayinfo.SkycodeImg">
+    </div>
+    <div class="img_content2">
+        <span class="curtemp">@todayinfo.Temperature°C</span>
+        <span class="clear">@todayinfo.WeatherStatus</span>
+    </div>
+</div>
+<div class="WeatherContent">
+<table class="table table-hover table-bordered" style="width: 600px">
+    <tbody>
+        <tr><td><h5>查詢日期：</h5></td><td><h5>@todayinfo.QueryDate</h5></td></tr>
+        <tr><td><h5>地點：</h5></td><td><h5>@todayinfo.AreaName - @todayinfo.CountryName</h5></td></tr>
+        <tr><td>溫度：</td><td>@todayinfo.Temperature</td></tr>
+        <tr><td>舒適度：</td><td>@todayinfo.Feelslike</td></tr>
+        <tr><td>溫度範圍：</td><td>@todayinfo.High°C ~ @todayinfo.Low°C</td></tr>
+        <tr><td>天氣狀況：</td><td>@todayinfo.WeatherStatus</td></tr>
+        <tr><td>濕度：</td><td>@todayinfo.Humidity</td></tr>
+        <tr><td>風速：</td><td>@todayinfo.Winddisplay</td></tr>
+        <tr><td>觀測時間：</td><td>@todayinfo.Observationtime</td></tr>
+    </tbody>
+</table>
+</div>
+
+@if (otherdays != null && otherdays.Count > 0)
+{ 
+    <br />
+    <br />
+    <legend>
+        <h4>最近五天天氣預報</h4>
+    </legend>
+<div class="OtherDaysDiv">
+@*<table class="table">
+<tbody>*@
+@foreach (var otherday in otherdays)
+{ 
+    <div class="otherdays">
+        <span class="otherdays_span">
+            <h5>@otherday.Shortday</h5></span><br>
+            @otherday.Date<br>
+            <img width="55" height="45" title="@otherday.WeatherStatus" src="@otherday.SkycodeImg"><br>
+            <span class="otherdays_span">@otherday.WeatherStatus</span><br>
+       
+            <h5>@otherday.Low°C ~ @otherday.High°C</h5><br>
+    </div>
+}
+@*</tbody>
+</table>*@
+</div>    
+}

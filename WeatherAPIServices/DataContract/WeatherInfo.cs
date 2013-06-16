@@ -21,5 +21,23 @@ namespace WeatherAPIServices.DataContract
         public string Shortday { get; set; }
         public string Precip { get; set; }
         public string WeatherStatus { get; set; }
+        public string SkycodeImg
+        {
+            get
+            {
+                return "http://wst.s-msn.com/i/en-us/law/" + this.Skycodeday + ".gif";
+            }
+        }
+
+        public WeatherAPIServices.Services.ParserService ParserService
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
     }
 }

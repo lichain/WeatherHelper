@@ -7,8 +7,10 @@ namespace WeatherHelper.Models
 {
     public class QueryViewModel
     {
+        public string AreaName { get; set; }
+        public string AreaCode { get; set; }
         public string CountryName { get; set; }
-        public string WeatherCountyCode { get; set; }
+        public string WCCode { get; set; }
         public string CurrnetDate { get; set; }
     }
 }

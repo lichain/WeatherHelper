@@ -4,20 +4,33 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 using WeatherAPIServices.DataContract;
+using CommonLib.Exceptions;
 
 namespace WeatherAPIServices.Services
 {
     public class ParserService
     {
+        public WeatherAPIServices.DataContract.QueryWeatherResponse QueryWeatherResponse
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+    
         public static QueryWeatherResponse ParserWeatherXMLInfo(XmlDocument XmlDoc)
         {
             if (XmlDoc == null)
-                throw new Exception("XmlDoc");
+                throw new ArgumentNullException("XmlDoc");
 
             QueryWeatherResponse respone = new QueryWeatherResponse();
             if (XmlDoc.SelectSingleNode(@"weatherdata/weather/current") != null)
             {
                 respone.CurrentDay = new CurrentWeatherInfo();
+                respone.CurrentDay.WCCode = XmlDoc.SelectSingleNode(@"weatherdata/weather").Attributes["weatherlocationcode"].InnerText.Split(':')[1];
                 respone.CurrentDay.Temperature = XmlDoc.SelectSingleNode(@"weatherdata/weather/current").Attributes["temperature"].InnerText;
                 respone.CurrentDay.Skycode = XmlDoc.SelectSingleNode(@"weatherdata/weather/current").Attributes["skycode"].InnerText;
                 respone.CurrentDay.Skytext = XmlDoc.SelectSingleNode(@"weatherdata/weather/current").Attributes["skytext"].InnerText;
@@ -43,20 +56,27 @@ namespace WeatherAPIServices.Services
                     weatherinfo.WeatherStatus = ChangeSkyCodeToWeatherStatus(weatherinfo.Skycodeday);
                     respone.OthreDays.Add(weatherinfo);
                 }
-                
+
+                if (respone.OthreDays.Count > 0)
+                { 
+                    respone.CurrentDay.High = respone.OthreDays[0].High;
+                    respone.CurrentDay.Low = respone.OthreDays[0].Low;
+                }
+
+                return respone;
             }
             else
             {
-                respone = null;
+                throw new XMLNodeNotFoundException();
             }
 
-            return respone;
         }
 
         public static string ChangeSkyCodeToWeatherStatus(string skycode)
         {
             if (string.IsNullOrWhiteSpace(skycode))
-                return "-";
+                throw new ArgumentNullException("skycode");
+                //return "-";
 
             string code = skycode.Trim();
 

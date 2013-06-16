@@ -11,3 +11,10 @@ C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\WeatherAPI
 C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\CommonLib.dll
 C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\CommonLib.pdb
 C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\Config\CityAndArea.xml
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\Microsoft.Practices.Unity.dll
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+C:\workspace\website\WeatherHelper\WeatherHelper.TestPrject\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll

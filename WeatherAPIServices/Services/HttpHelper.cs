@@ -9,6 +9,7 @@ namespace WeatherAPIServices.Services
 {
     public class HttpHelper
     {
+    
         public static string DoHttpGet(string url)
         {
             if (string.IsNullOrWhiteSpace(url))

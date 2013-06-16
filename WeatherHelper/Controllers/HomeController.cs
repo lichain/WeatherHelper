@@ -14,10 +14,5 @@ namespace WeatherHelper.Controllers
 
                         return View();
                 }
-
-                public ActionResult About()
-                {
-                        return View();
-                }
         }
 }

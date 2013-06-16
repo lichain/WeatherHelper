@@ -1,43 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Comment CommentText="WeatherAPIServices">
-    <Position X="4.854" Y="4.844" Height="0.49" Width="1.492" />
-  </Comment>
-  <Class Name="WeatherAPIServices.DataContract.Area">
-    <Position X="11.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier />
+  <Class Name="WeatherHelper.Controllers.AdvancedQueryController">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAIEAAAAAAAA=</HashCode>
+      <FileName>Controllers\AdvancedQueryController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="QueryServices" />
+    </ShowAsAssociation>
   </Class>
-  <Class Name="WeatherAPIServices.DataContract.County">
-    <Position X="6.5" Y="0.5" Width="2.25" />
-    <TypeIdentifier />
+  <Class Name="WeatherHelper.Controllers.HomeController">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
   </Class>
-  <Class Name="WeatherAPIServices.DataContract.CurrentWeatherInfo">
-    <Position X="2.5" Y="1" Width="2" />
-    <TypeIdentifier />
+  <Class Name="WeatherHelper.Controllers.QueryController">
+    <Position X="2.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAABAAAAAAAAAAAAAAAAAIEAAAAAAAA=</HashCode>
+      <FileName>Controllers\QueryController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="QueryServices" />
+    </ShowAsAssociation>
   </Class>
-  <Class Name="WeatherAPIServices.DataContract.QueryWeatherRequest">
-    <Position X="6.5" Y="2.5" Width="2" />
-    <TypeIdentifier />
+  <Class Name="WeatherHelper.Controllers.ReportController">
+    <Position X="6.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\ReportController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="WeatherDataDAO" />
+    </ShowAsAssociation>
   </Class>
-  <Class Name="WeatherAPIServices.DataContract.QueryWeatherResponse">
-    <Position X="8.75" Y="2.5" Width="2.25" />
-    <TypeIdentifier />
+  <Class Name="WeatherHelper.HtmlHelper.SelectHelper">
+    <Position X="4.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAIAAAAAAAAEAAAA=</HashCode>
+      <FileName>HtmlHelper\SelectHelper.cs</FileName>
+    </TypeIdentifier>
   </Class>
-  <Class Name="WeatherAPIServices.DataContract.WeatherInfo">
-    <Position X="0.75" Y="1" Width="1.5" />
-    <TypeIdentifier />
+  <Class Name="WeatherHelper.Models.ErrorPageModel">
+    <Position X="6.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAQQAAAAAAEAAAAA=</HashCode>
+      <FileName>Models\ErrorPageModel.cs</FileName>
+    </TypeIdentifier>
   </Class>
-  <Class Name="WeatherAPIServices.Services.ParserService">
-    <Position X="9" Y="0.5" Width="2" />
-    <TypeIdentifier />
+  <Class Name="WeatherHelper.Models.QueryViewModel">
+    <Position X="8" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAgAAAAAAEAAAAAACAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\QueryViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherHelper.Models.QureyWeatherInfo">
+    <Position X="0.75" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAgAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Models\QureyWeatherInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherHelper.Models.WeatherReport">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\WeatherReport.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Class Name="WeatherAPIServices.Services.QueryServices">
-    <Position X="4.75" Y="1.5" Width="1.5" />
+    <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier />
   </Class>
-  <Enum Name="WeatherAPIServices.DataContract.WeatherStatus">
-    <Position X="4.75" Y="3" Width="1.5" />
+  <Class Name="WeatherAPIServices.DAO.WeatherDataDAO">
+    <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier />
-  </Enum>
+  </Class>
   <Font Name="Microsoft JhengHei UI" Size="9" />
 </ClassDiagram>

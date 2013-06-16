@@ -8,6 +8,17 @@ namespace WeatherHelper.Controllers
 {
     public class ReportController : Controller
     {
+
+        public WeatherAPIServices.DAO.WeatherDataDAO WeatherDataDAO
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
         //
         // GET: /Report/
 

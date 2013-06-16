@@ -19,6 +19,9 @@ namespace WeatherAPIServices.Services
         // Contributed by Gokhan Saltik
         public static string GetMaxMindOmniData(string IP)
         {
+            if (string.IsNullOrWhiteSpace(IP))
+                throw new ArgumentNullException("IP");
+
             System.Uri objUrl = new System.Uri("http://geoip.maxmind.com/e?l=pK1gLCahHp56&i=" + IP);
             System.Net.WebRequest objWebReq;
             System.Net.WebResponse objResp;
@@ -38,6 +41,7 @@ namespace WeatherAPIServices.Services
             }
             catch (Exception ex)
             {
+                throw ex;
             }
             finally
             {
@@ -49,6 +53,9 @@ namespace WeatherAPIServices.Services
 
         public string GetLocation(string IP)
         {
+            if (string.IsNullOrWhiteSpace(IP))
+                throw new ArgumentNullException("IP");
+
             var location = "";
             List<string> HTML_code = new List<string>();
             WebRequest request = WebRequest.Create("http://www.maxmind.com/app/locate_demo_ip?ips=" + IP);

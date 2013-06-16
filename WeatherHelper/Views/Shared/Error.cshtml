@@ -1,9 +1,20 @@
-﻿@model System.Web.Mvc.HandleErrorInfo
+﻿@*@model System.Web.Mvc.HandleErrorInfo*@
+@model WeatherHelper.Models.ErrorPageModel
 
 @{
     ViewBag.Title = "Error";
 }
 
-<h2>
-    Sorry, an error occurred while processing your request.
-</h2>
+
+    @if(Model != null )
+    {    
+        <h2>@Model.ErrorTitle</h2>
+        <h5>@Model.ErrorMsg</h5>
+    }
+    @if(Model == null )
+    {
+        <h2>Sorry, an error occurred while processing your request.</h2>
+    }
+
+    
+

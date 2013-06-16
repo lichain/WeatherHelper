@@ -1,0 +1,14 @@
+C:\workspace\website\WeatherHelper\WeatherAPIServicesTestProject\bin\Debug\Config\CityAndArea.xml
+C:\workspace\website\WeatherHelper\WeatherAPIServicesTestProject\bin\Debug\WeatherAPIServicesTestProject.dll
+C:\workspace\website\WeatherHelper\WeatherAPIServicesTestProject\bin\Debug\WeatherAPIServicesTestProject.pdb
+C:\workspace\website\WeatherHelper\WeatherAPIServicesTestProject\bin\Debug\CommonLib.dll
+C:\workspace\website\WeatherHelper\WeatherAPIServicesTestProject\bin\Debug\EntityFramework.dll
+C:\workspace\website\WeatherHelper\WeatherAPIServicesTestProject\bin\Debug\WeatherAPIServices.dll
+C:\workspace\website\WeatherHelper\WeatherAPIServicesTestProject\bin\Debug\WeatherHelper.dll
+C:\workspace\website\WeatherHelper\WeatherAPIServicesTestProject\bin\Debug\CommonLib.pdb
+C:\workspace\website\WeatherHelper\WeatherAPIServicesTestProject\bin\Debug\WeatherAPIServices.pdb
+C:\workspace\website\WeatherHelper\WeatherAPIServicesTestProject\bin\Debug\WeatherHelper.pdb
+C:\workspace\website\WeatherHelper\WeatherAPIServicesTestProject\bin\Debug\EntityFramework.xml
+C:\workspace\website\WeatherHelper\WeatherAPIServicesTestProject\obj\Debug\WeatherAPIServicesTestProject.csprojResolveAssemblyReference.cache
+C:\workspace\website\WeatherHelper\WeatherAPIServicesTestProject\obj\Debug\WeatherAPIServicesTestProject.dll
+C:\workspace\website\WeatherHelper\WeatherAPIServicesTestProject\obj\Debug\WeatherAPIServicesTestProject.pdb

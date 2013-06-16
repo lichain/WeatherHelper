@@ -13,13 +13,32 @@ namespace WeatherAPIServices.Services
 
             private const string MSN_WEATHER_API_URL = "http://weather.msn.com/data.aspx?weadegreetype=C&wealocations=wc:{0}";
 
+            public ParserService ParserService
+            {
+                get
+                {
+                    throw new System.NotImplementedException();
+                }
+                set
+                {
+                }
+            }
+
             public static QueryWeatherResponse GetWeatherInfo(QueryWeatherRequest request)
             {
+                if (request == null)
+                    throw new ArgumentNullException("request");
+
                 XmlDocument xmlConditions = new XmlDocument();
-                xmlConditions.Load(string.Format(MSN_WEATHER_API_URL, request.WeatherCountryCode));
+                xmlConditions.Load(string.Format(MSN_WEATHER_API_URL, request.WCCode));
 
                 //Parser MSN-Weather-info XML
-                return ParserService.ParserWeatherXMLInfo(xmlConditions);
+                QueryWeatherResponse response = ParserService.ParserWeatherXMLInfo(xmlConditions);
+                response.CurrentDay.AreaCode = request.AreaCode;
+                response.CurrentDay.WCCode = request.WCCode;
+                response.CurrentDay.Shortday = response.OthreDays[0].Shortday;
+
+                return response;
             }
 
         }

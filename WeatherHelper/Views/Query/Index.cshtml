@@ -14,8 +14,9 @@
                 <span class="title">地點(ex:台北市...)</span>
         </th>
         <td>
-            <span class="Title">縣市：</span>@Html.Raw(SelectHelper.AreaControl("CountryName"))
-            <span class="Title">地區：</span>@Html.Raw(SelectHelper.CountryControl("WeatherCountyCode"))
+            <span class="Title">縣市：</span>@Html.Raw(SelectHelper.AreaControl("AreaCode"))
+            @*<span class="Title">地區：</span>@Html.Raw(SelectHelper.CountryControl("WeatherCountyCode"))*@
+            <span class="Title">地區：</span>@Html.Raw(SelectHelper.WCCountryControl("WCCode"))
         </td>
         </tr>     
         <tr>
@@ -23,10 +24,9 @@
                 <span class="title">日期</span>
         </th>
          <td>
-                @*<input type="text" id="txtDate" placeholder="Type something…">*@
                  <div class="well">
                          <div id="datetimepicker1" class="input-append date">
-                                 <input id="CurrentDate" name="CurrentDate" data-format="yyyy/MM/dd" type="text"></input>
+                                 <input id="CurrentDate" name="CurrentDate" data-format="yyyy/MM/dd" type="text" disabled="disabled"></input>
                                  <span class="add-on"><i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
                                  </span>
                          </div>
@@ -39,42 +39,30 @@
 </div>
 <script type="text/javascript">
     $(function () {
+        myUnBlcokUI();
         var datepicker1 = $('#datetimepicker1');
         datepicker1.datetimepicker();
         $("#datetimepicker1 > input").val(getNow());
 
-        //var selectAreaID = 'selectArea';
-        //var selectCountryID = 'selectCountry';
-
-        //$("#selectCountry > option[data-area-code!='" + "2" + "']").hide();
-
-        $("#CountryName").change(function () {
-            $("#WeatherCountyCode").val("");
-            var AreaCode = $("#CountryName option:selected").attr("value");
-            $("#WeatherCountyCode > option").show();
-            //alert(AreaCode);
-            $("#WeatherCountyCode > option[data-area-code!='" + AreaCode + "']").hide();
-            //$("#selectCountry > option[data-area-code='" + AreaCode + "']")[0].attr("selected","selected");
-            //alert($(this));
-            //var plzSelect = $("#selectCountry option[value='-1']");
-
-            //$("#selectCountry").val("plz select");
-            //$(plzSelect).show().attr("selected","selected");
-
-            //alert($("#selectCountry option[value]='-1'").length);
+        $("#AreaCode").change(function () {
+            $("#WCCode").val("");
+            var AreaCode = $("#AreaCode option:selected").attr("value");
+            $("#WCCode > option").show();
+            $("#WCCode > option[data-area-code!='" + AreaCode + "']").hide();
         });
 
-
         $("#btnQuery").click(function () {
+            var areacode = $("#AreaCode").val();
+            var countrycode = $("#WCCode").val();
 
-            var CountryName = "test";
-            var WeatherCountyCode = "1111";
+            if(areacode == -1 || areacode ==null || countrycode == -1 || countrycode == null)
+            {
+                alert("請選擇縣市和地區!");
+                return false;
+            }
+            //return false;
+            myBlockUI();
             $("#queryForm").submit();
-            //$.post(
-            // "@Url.Action("DoQuery") ",
-            //{CountryName:'test',WeatherCountyCode:'100'}
-            //);
-
         });
     });
 </script>
