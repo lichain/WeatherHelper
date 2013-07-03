@@ -20,7 +20,7 @@ namespace WeatherHelper.TestPrject.WeatherAPIServices.Services
         [ExpectedException(typeof(ArgumentNullException))]
         public void ParserWeatherXMLInfo_Null_Test()
         {
-            ParserService.ParserWeatherXMLInfo(null);
+            ParserService.ParserWeatherXMLInfo(null,null);
         }
 
         [TestMethod]
@@ -30,7 +30,9 @@ namespace WeatherHelper.TestPrject.WeatherAPIServices.Services
             XmlDocument xmlConditions = new XmlDocument();
             xmlConditions.Load("http://weather.yahooapis.com/forecastrss?w=2502265");
 
-            ParserService.ParserWeatherXMLInfo(xmlConditions);
+            QueryWeatherRequest request = new QueryWeatherRequest();
+
+            ParserService.ParserWeatherXMLInfo(xmlConditions, request);
         }
 
         [TestMethod]
@@ -39,7 +41,11 @@ namespace WeatherHelper.TestPrject.WeatherAPIServices.Services
             XmlDocument xmlConditions = new XmlDocument();
             xmlConditions.Load("http://weather.msn.com/data.aspx?weadegreetype=C&wealocations=wc:TWXX0019");
 
-            QueryWeatherResponse response  = ParserService.ParserWeatherXMLInfo(xmlConditions);
+            QueryWeatherRequest request = new QueryWeatherRequest();
+            request.AreaCode = "10";
+            request.WCCode = "TWXX0001";
+
+            QueryWeatherResponse response = ParserService.ParserWeatherXMLInfo(xmlConditions, request);
             Assert.AreEqual(response.CurrentDay.WCCode, "TWXX0019");
         }
 
@@ -48,8 +54,12 @@ namespace WeatherHelper.TestPrject.WeatherAPIServices.Services
         {
             XmlDocument xmlConditions = new XmlDocument();
             xmlConditions.Load("http://weather.msn.com/data.aspx?weadegreetype=C&wealocations=wc:TWXX0019");
+            
+            QueryWeatherRequest request = new QueryWeatherRequest();
+            request.AreaCode = "10";
+            request.WCCode = "TWXX0001";
 
-            QueryWeatherResponse response = ParserService.ParserWeatherXMLInfo(xmlConditions);
+            QueryWeatherResponse response = ParserService.ParserWeatherXMLInfo(xmlConditions, request);
             Assert.AreEqual(response.OthreDays.Count, 5);
         }
 

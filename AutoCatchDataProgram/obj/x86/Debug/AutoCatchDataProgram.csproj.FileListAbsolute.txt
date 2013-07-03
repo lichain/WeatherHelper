@@ -14,5 +14,3 @@ C:\workspace\website\WeatherHelper\AutoCatchDataProgram\bin\Debug\Microsoft.Prac
 C:\workspace\website\WeatherHelper\AutoCatchDataProgram\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 C:\workspace\website\WeatherHelper\AutoCatchDataProgram\bin\Debug\Microsoft.Practices.Unity.dll
 C:\workspace\website\WeatherHelper\AutoCatchDataProgram\bin\Debug\Microsoft.Practices.Unity.Interception.dll
-C:\workspace\website\WeatherHelper\AutoCatchDataProgram\bin\Debug\AutoCatchDataProgram.exe.CodeAnalysisLog.xml
-C:\workspace\website\WeatherHelper\AutoCatchDataProgram\bin\Debug\AutoCatchDataProgram.exe.lastcodeanalysissucceeded

@@ -12,7 +12,7 @@ namespace WeatherHelper.Models
                 SometimesRainyDay
         }
 
-        public class WeatherInfo
+        public class WeatherInfoViewModel
         {
                 public DateTime Date { get; set; }
                 public WeatherStatus Status {get;set;}

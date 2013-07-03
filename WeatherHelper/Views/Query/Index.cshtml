@@ -1,9 +1,11 @@
 ﻿@using WeatherHelper.HtmlHelper
 @{
     ViewBag.Title = "Query";
-
+    string nodata = Convert.ToString(ViewData["NoData"]);
 }
 <link href="@Url.Content("~/css/bootstrap-datetimepicker.min.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/js/jGrowl-master/jquery.jgrowl.min.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/js/jGrowl-master/jquery.jgrowl.min.js")" type="text/javascript"></script>
 <script src="@Url.Content("~/js/bootstrap-datetimepicker.min.js")" type="text/javascript"></script>
 <form id="queryForm" method="POST" action="@Url.Action("DoQuery")">
 <h1>天氣查詢</h1>
@@ -37,9 +39,20 @@
         <span id="btnQuery" class="btn btn-primary btn-large ">Query</span>
         <a href="./"><span id="btnCancel" class="btn btn-primary btn-large ">Cancel</span></a>
 </div>
+<div class="growlUI" style="display: none">
+    <h2>
+        查無該地區天氣資料！</h2>
+</div>
 <script type="text/javascript">
     $(function () {
         myUnBlcokUI();
+
+        var nodata = '@nodata';
+        if (nodata == "true") {
+            $.growlUI('', '查無天氣資料!'); 
+            //ShowErrorMsgByBlockUI();
+        }
+
         var datepicker1 = $('#datetimepicker1');
         datepicker1.datetimepicker();
         $("#datetimepicker1 > input").val(getNow());
@@ -55,8 +68,7 @@
             var areacode = $("#AreaCode").val();
             var countrycode = $("#WCCode").val();
 
-            if(areacode == -1 || areacode ==null || countrycode == -1 || countrycode == null)
-            {
+            if (areacode == -1 || areacode == null || countrycode == -1 || countrycode == null) {
                 alert("請選擇縣市和地區!");
                 return false;
             }

@@ -14,20 +14,39 @@
 <body>
     <div class="page">
         <header>
-            <div id="title">
-                
+            <div class="navbar  navbar-inverse">
+                <div class="navbar-inner">
+                    <div class="container">
+
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        
+                        <div id="Menu" class="nav-collapse collapse">
+                            <ul class="nav">
+                                <li>
+                                    <a href="@Url.Content("~/")"><i class="icon-home  icon-white"></i> 回首頁 </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Content("~/Query")"><i class="icon-search icon-white"></i> 查詢 </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Content("~/AdvancedQuery")"><i class="icon-search icon-white"></i> 進階查詢 </a>
+                                </li>
+                                <li >
+                                    <a id="Report" href="@Url.Content("~/Report")"><i class="icon-th-list icon-white"></i> Report </a>
+                                </li>
+                                <li >
+                                    <a id="Report" href="@Url.Content("~/NotifyCenter/Setting")"><i class="icon-wrench icon-white"></i> Notify Setting  </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div id="logindisplay">
-            <div>&nbsp; 
-            </div>
-                @*@Html.Partial("_LogOnPartial")*@
-            </div>
-            <nav>
-@*                <ul id="menu">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                </ul>*@
-            </nav>
         </header>
         <section id="main">
             @RenderBody()

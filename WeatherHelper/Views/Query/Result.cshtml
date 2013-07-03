@@ -1,9 +1,19 @@
 ﻿@using WeatherAPIServices.DataContract
 @{
-    ViewBag.Title = "Result";
-    CurrentWeatherInfo todayinfo = ViewBag.CurrentDay;
+    ViewBag.Title = "Query - Result";
+    WeatherInfo todayinfo = ViewBag.CurrentDay;
 }
-<legend><h2>Result</h2></legend>
+@if (todayinfo == null)
+{ 
+    <script>
+        alert('查無此地區資料！');
+        history.go(-1);
+    </script>
+}
+else
+{ 
+<legend>
+        <h2>Query - Result</h2></legend>
 <div class="skyimg">
     <div class="img_content1">
         <img width="55" height="45" title="@todayinfo.WeatherStatus" src="@todayinfo.SkycodeImg">
@@ -28,5 +38,5 @@
     </tbody>
 </table>
 </div>
-
+}
 

@@ -1,5 +1,87 @@
-﻿@{
+﻿@using WeatherHelper.HtmlHelper
+@using WeatherAPIServices.DataContract
+@{
     ViewBag.Title = "Setting";
+    List<MemberInfo> members = ViewBag.MemberInfos;
 }
 
-<h2>Notify Setting</h2>
+<legend>
+    <h2>Notify Setting</h2>
+</legend>
+<table class="table table-striped">
+    <tr>
+        <th class="th_title">
+            <span class="title">條件</span>
+        </th>
+        <td>
+            <div class="well">
+                <div>
+                   @Html.Raw(SelectHelper.NotifyRuleControl("NotifyRule"))
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+    <th class="th_title">
+        <span class="title">名單</span>
+    </th>
+    <td>
+        @if (members != null && members.Count > 0)
+        { 
+            <table class="table">
+             @foreach(var m in members)
+             {
+                 <tr><td>
+                     <input class="MailList" type="checkbox" checked="checked" data-no="@m.UserNO" disabled="disabled" data-mail="@m.UserEmail" />  <span class="MemberInfo" data-name="@m.UserName">  @m.UserName - @m.UserEmail</span></td></tr>
+             }
+            </table>
+        }
+    </td>
+    </tr>
+</table>
+<span id="btnExc" class="btn btn-primary btn-large ">立即執行</span>
+
+@*<div class="growlUI" style="display: none">
+    <h2>
+        執行完成！</h2>
+</div>*@
+
+<script type="text/javascript">
+    $(function () {
+
+
+        $("#btnExc").click(function () {
+            var Username = $(".MemberInfo").attr("data-name");
+            var Usermail = $(".MailList").attr("data-mail");
+            var Ruleid = $(".NotifyRule[checked='yes']").attr("data-id");
+            //alert(Ruleid);
+            myBlockUI();
+            $.ajax({
+                url: './DoSendMail',
+                type: 'POST',
+                dataType: 'json',
+                data: { UserName:Username, UseMail: Usermail, RuleID: Ruleid },
+                success: function (data, textStatus, xhr) {
+                    //called when successful
+                    if (data.IsSuccess == true) {
+                        $.growlUI('', '執行完成！'); 
+                        //alert("已執行");
+                    }
+                    else {
+                        alert(data.Msg);
+                    }
+                    myUnBlcokUI();
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    //called when there is an error
+                    alert("system error");
+                    myUnBlcokUI();
+                }
+            });
+
+
+        });
+
+    });
+    
+</script>

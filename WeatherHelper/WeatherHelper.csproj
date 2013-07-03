@@ -119,6 +119,7 @@
     <Content Include="css\site.css" />
     <Content Include="Global.asax" />
     <Content Include="img\bt_left.ico" />
+    <Content Include="img\check48.png" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
     <Content Include="img\home_w.ico" />
@@ -127,7 +128,19 @@
     <Content Include="js\bootstrap-datetimepicker.min.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jGrowl-master\.gitignore" />
+    <Content Include="js\jGrowl-master\examples\iphone.png" />
+    <Content Include="js\jGrowl-master\examples\jgrowl-pool.html" />
+    <Content Include="js\jGrowl-master\examples\jgrowl.html" />
+    <Content Include="js\jGrowl-master\examples\multiple-containers.html" />
+    <Content Include="js\jGrowl-master\examples\sideways.html" />
+    <Content Include="js\jGrowl-master\examples\smoke.png" />
+    <Content Include="js\jGrowl-master\jquery.jgrowl.css" />
+    <Content Include="js\jGrowl-master\jquery.jgrowl.js" />
+    <Content Include="js\jGrowl-master\jquery.jgrowl.min.css" />
+    <Content Include="js\jGrowl-master\jquery.jgrowl.min.js" />
     <Content Include="js\jquery.blockUI.js" />
+    <Content Include="js\lib\jquery.mousewheel.js" />
     <Content Include="Scripts\Common.js" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.5.1.js" />
@@ -177,10 +190,16 @@
     <Content Include="Views\NotifyCenter\Setting.cshtml" />
     <Content Include="Views\AdvancedQuery\Index.cshtml" />
     <Content Include="Views\Query\Index.cshtml" />
-    <Content Include="Views\Report\Index.cshtml" />
+    <Content Include="Views\Report\Result.cshtml" />
     <Content Include="Views\Query\Result.cshtml" />
     <Content Include="Views\Shared\NotFound.cshtml" />
     <Content Include="Views\AdvancedQuery\Result.cshtml" />
+    <None Include="js\jGrowl-master\examples\.DS_Store" />
+    <None Include="js\jGrowl-master\jgrowl.jquery.json" />
+    <None Include="js\jGrowl-master\jquery.jgrowl.map" />
+    <None Include="js\jGrowl-master\LICENSE" />
+    <None Include="js\jGrowl-master\README.md" />
+    <Content Include="Views\Report\Index.cshtml" />
     <None Include="WeatherInfoWebClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>

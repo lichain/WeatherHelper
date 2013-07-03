@@ -33,7 +33,7 @@ namespace WeatherAPIServices.Services
                 xmlConditions.Load(string.Format(MSN_WEATHER_API_URL, request.WCCode));
 
                 //Parser MSN-Weather-info XML
-                QueryWeatherResponse response = ParserService.ParserWeatherXMLInfo(xmlConditions);
+                QueryWeatherResponse response = ParserService.ParserWeatherXMLInfo(xmlConditions, request);
                 response.CurrentDay.AreaCode = request.AreaCode;
                 response.CurrentDay.WCCode = request.WCCode;
                 response.CurrentDay.Shortday = response.OthreDays[0].Shortday;

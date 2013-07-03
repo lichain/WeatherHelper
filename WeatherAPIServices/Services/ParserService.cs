@@ -21,15 +21,18 @@ namespace WeatherAPIServices.Services
             }
         }
     
-        public static QueryWeatherResponse ParserWeatherXMLInfo(XmlDocument XmlDoc)
+        public static QueryWeatherResponse ParserWeatherXMLInfo(XmlDocument XmlDoc, QueryWeatherRequest request)
         {
             if (XmlDoc == null)
                 throw new ArgumentNullException("XmlDoc");
 
+            if (request == null)
+                throw new ArgumentNullException("request");
+
             QueryWeatherResponse respone = new QueryWeatherResponse();
             if (XmlDoc.SelectSingleNode(@"weatherdata/weather/current") != null)
             {
-                respone.CurrentDay = new CurrentWeatherInfo();
+                respone.CurrentDay = new WeatherInfo();
                 respone.CurrentDay.WCCode = XmlDoc.SelectSingleNode(@"weatherdata/weather").Attributes["weatherlocationcode"].InnerText.Split(':')[1];
                 respone.CurrentDay.Temperature = XmlDoc.SelectSingleNode(@"weatherdata/weather/current").Attributes["temperature"].InnerText;
                 respone.CurrentDay.Skycode = XmlDoc.SelectSingleNode(@"weatherdata/weather/current").Attributes["skycode"].InnerText;
@@ -42,18 +45,23 @@ namespace WeatherAPIServices.Services
                 respone.CurrentDay.Winddisplay = XmlDoc.SelectSingleNode(@"weatherdata/weather/current").Attributes["winddisplay"].InnerText;
                 respone.CurrentDay.WeatherStatus = ChangeSkyCodeToWeatherStatus(respone.CurrentDay.Skycode);
 
-                respone.OthreDays = new List<WeatherInfo>();
+                respone.OthreDays = new List<ForeseeWeatherInfo>();
                 for(int i = 0 ; i  <  XmlDoc.SelectNodes(@"weatherdata/weather/forecast").Count ; i++)
                 {
-                    WeatherInfo weatherinfo = new WeatherInfo();
+                    ForeseeWeatherInfo weatherinfo = new ForeseeWeatherInfo();
                     weatherinfo.Low = XmlDoc.SelectNodes(@"weatherdata/weather/forecast")[i].Attributes["low"].InnerText;
                     weatherinfo.High = XmlDoc.SelectNodes(@"weatherdata/weather/forecast")[i].Attributes["high"].InnerText;
                     weatherinfo.Skycodeday = XmlDoc.SelectNodes(@"weatherdata/weather/forecast")[i].Attributes["skycodeday"].InnerText;
+                    weatherinfo.Skytextday = XmlDoc.SelectNodes(@"weatherdata/weather/forecast")[i].Attributes["skytextday"].InnerText;
                     weatherinfo.Date = XmlDoc.SelectNodes(@"weatherdata/weather/forecast")[i].Attributes["date"].InnerText;
                     weatherinfo.Day = XmlDoc.SelectNodes(@"weatherdata/weather/forecast")[i].Attributes["day"].InnerText;
                     weatherinfo.Shortday = XmlDoc.SelectNodes(@"weatherdata/weather/forecast")[i].Attributes["shortday"].InnerText;
                     weatherinfo.Precip = XmlDoc.SelectNodes(@"weatherdata/weather/forecast")[i].Attributes["precip"].InnerText;
                     weatherinfo.WeatherStatus = ChangeSkyCodeToWeatherStatus(weatherinfo.Skycodeday);
+
+                    weatherinfo.AreaCode = request.AreaCode;
+                    weatherinfo.WCCode = request.WCCode;
+
                     respone.OthreDays.Add(weatherinfo);
                 }
 

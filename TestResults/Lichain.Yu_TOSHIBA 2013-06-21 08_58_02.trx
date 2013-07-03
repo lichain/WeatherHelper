@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="cae5b9c0-8b42-4709-bf10-b2209a2676cb" name="Lichain.Yu@TOSHIBA 2013-06-21 08:58:02" runUser="TOSHIBA\Lichain.Yu" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="18ff7cbf-2d81-4f81-9dee-b70d9e0ebc50">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Lichain.Yu_TOSHIBA 2013-06-21 08_58_02">
+      <DeploymentItem filename="C:\workspace\website\WeatherHelper\WeatherHelper\bin\WeatherHelper.dll" />
+      <DeploymentItem filename="C:\workspace\website\WeatherHelper\Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+      <DeploymentItem filename="C:\workspace\website\WeatherHelper\Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+      <DeploymentItem filename="C:\workspace\website\WeatherHelper\Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Caching.dll" />
+      <DeploymentItem filename="C:\workspace\website\WeatherHelper\Libraries\Enterprise Library 5.0\Microsoft.Practices.EnterpriseLibrary.Logging.dll" />
+      <DeploymentItem filename="C:\workspace\website\WeatherHelper\CommonLib\bin\Debug\CommonLib.dll" />
+      <DeploymentItem filename="C:\workspace\website\WeatherHelper\WeatherAPIServices\bin\Debug\WeatherAPIServices.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-21T08:58:02.3957403+08:00" queuing="2013-06-21T08:58:02.5638536+08:00" start="2013-06-21T08:58:02.5718565+08:00" finish="2013-06-21T08:58:17.6419038+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="WCCodeDAO_getWCCountryList_ConnectionString_Error_Test" storage="c:\workspace\website\weatherhelper\weatherhelper.testprject\bin\debug\weatherhelper.testprject.dll" id="f3ab4a8c-e47e-52d1-d54b-359db2f67a86">
+      <Execution id="24e8ae69-1e9c-46e8-bf6e-86869bac71fb" />
+      <TestMethod codeBase="C:/workspace/website/WeatherHelper/WeatherHelper.TestPrject/bin/Debug/WeatherHelper.TestPrject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WeatherHelper.TestPrject.WeatherAPIServices.DAO.DBConnectionErrorTest, WeatherHelper.TestPrject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WCCodeDAO_getWCCountryList_ConnectionString_Error_Test" />
+    </UnitTest>
+    <UnitTest name="WeatherDataDAO_NewWeatherData_ConnectionString_Error_Test" storage="c:\workspace\website\weatherhelper\weatherhelper.testprject\bin\debug\weatherhelper.testprject.dll" id="5c949633-a3ac-3fea-090d-367e007d0a0f">
+      <Execution id="ccaad404-06ce-40df-82a1-0ef3af9eee73" />
+      <TestMethod codeBase="C:/workspace/website/WeatherHelper/WeatherHelper.TestPrject/bin/Debug/WeatherHelper.TestPrject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WeatherHelper.TestPrject.WeatherAPIServices.DAO.DBConnectionErrorTest, WeatherHelper.TestPrject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WeatherDataDAO_NewWeatherData_ConnectionString_Error_Test" />
+    </UnitTest>
+    <UnitTest name="getWCCountryList_ConnectionString_Error_Test" storage="c:\workspace\website\weatherhelper\weatherhelper.testprject\bin\debug\weatherhelper.testprject.dll" id="74e9980a-6cb2-97ed-1574-c20e60c71481">
+      <Execution id="fd49cf99-3167-4dff-825e-896641d66d65" />
+      <TestMethod codeBase="C:/workspace/website/WeatherHelper/WeatherHelper.TestPrject/bin/Debug/WeatherHelper.TestPrject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WeatherHelper.TestPrject.WeatherAPIServices.DAO.WCCodeDAOTest, WeatherHelper.TestPrject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getWCCountryList_ConnectionString_Error_Test" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+    <TestList name="Lists of Results" id="8c43106b-9dc1-4907-a29f-aa66a61bf5b6" />
+    <TestList name="SpecCase" id="a555d56a-2f4d-414d-8ffc-29c594501964" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+      <TestLinks>
+        <TestLink id="f3ab4a8c-e47e-52d1-d54b-359db2f67a86" name="WCCodeDAO_getWCCountryList_ConnectionString_Error_Test" storage="c:\workspace\website\weatherhelper\weatherhelper.testprject\bin\debug\weatherhelper.testprject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="5c949633-a3ac-3fea-090d-367e007d0a0f" name="WeatherDataDAO_NewWeatherData_ConnectionString_Error_Test" storage="c:\workspace\website\weatherhelper\weatherhelper.testprject\bin\debug\weatherhelper.testprject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="74e9980a-6cb2-97ed-1574-c20e60c71481" name="getWCCountryList_ConnectionString_Error_Test" storage="c:\workspace\website\weatherhelper\weatherhelper.testprject\bin\debug\weatherhelper.testprject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      </TestLinks>
+    </TestList>
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="74e9980a-6cb2-97ed-1574-c20e60c71481" executionId="fd49cf99-3167-4dff-825e-896641d66d65" testListId="a555d56a-2f4d-414d-8ffc-29c594501964" />
+    <TestEntry testId="f3ab4a8c-e47e-52d1-d54b-359db2f67a86" executionId="24e8ae69-1e9c-46e8-bf6e-86869bac71fb" testListId="a555d56a-2f4d-414d-8ffc-29c594501964" />
+    <TestEntry testId="5c949633-a3ac-3fea-090d-367e007d0a0f" executionId="ccaad404-06ce-40df-82a1-0ef3af9eee73" testListId="a555d56a-2f4d-414d-8ffc-29c594501964" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="fd49cf99-3167-4dff-825e-896641d66d65" testId="74e9980a-6cb2-97ed-1574-c20e60c71481" testName="getWCCountryList_ConnectionString_Error_Test" computerName="TOSHIBA" duration="00:00:14.8218383" startTime="2013-06-21T08:58:02.5738585+08:00" endTime="2013-06-21T08:58:17.6118832+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="a555d56a-2f4d-414d-8ffc-29c594501964" relativeResultsDirectory="fd49cf99-3167-4dff-825e-896641d66d65">
+    </UnitTestResult>
+    <UnitTestResult executionId="24e8ae69-1e9c-46e8-bf6e-86869bac71fb" testId="f3ab4a8c-e47e-52d1-d54b-359db2f67a86" testName="WCCodeDAO_getWCCountryList_ConnectionString_Error_Test" computerName="TOSHIBA" duration="00:00:00.0015370" startTime="2013-06-21T08:58:17.6128854+08:00" endTime="2013-06-21T08:58:17.6168887+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="a555d56a-2f4d-414d-8ffc-29c594501964" relativeResultsDirectory="24e8ae69-1e9c-46e8-bf6e-86869bac71fb">
+    </UnitTestResult>
+    <UnitTestResult executionId="ccaad404-06ce-40df-82a1-0ef3af9eee73" testId="5c949633-a3ac-3fea-090d-367e007d0a0f" testName="WeatherDataDAO_NewWeatherData_ConnectionString_Error_Test" computerName="TOSHIBA" duration="00:00:00.0047138" startTime="2013-06-21T08:58:17.6188888+08:00" endTime="2013-06-21T08:58:17.6258944+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="a555d56a-2f4d-414d-8ffc-29c594501964" relativeResultsDirectory="ccaad404-06ce-40df-82a1-0ef3af9eee73">
+    </UnitTestResult>
+  </Results>
+</TestRun>

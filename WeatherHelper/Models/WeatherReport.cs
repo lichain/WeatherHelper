@@ -7,6 +7,6 @@ namespace WeatherHelper.Models
 {
         public class WeatherReport
         {
-                public List<WeatherInfo> WeatherInfos { get; set; }
+            public List<WeatherInfoViewModel> WeatherInfos { get; set; }
         }
 }

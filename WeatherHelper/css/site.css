@@ -29,6 +29,29 @@ html body div.JobContent table tbody tr td{padding-right:5px;}
 .img_content2{display:inline-block;vertical-align: middle;}
 .otherdays{display:inline-block;padding:30px;}
 .otherdays_span{text-align:middle;}
+/*div.growlUI {
+    background: url(../img/not_found.png) no-repeat 10px 10px / 48px 48px transparent;
+    display: inline-block;
+}
+
+.growlUI h2 {
+    display: inline-block;
+    padding-left: 67px;
+    padding-top: 5px;
+}*/
+
+div.growlUI 
+{
+    background: url(../img/check48.png) no-repeat 10px 10px / 48px 48px transparent;
+    display: inline-block;
+}
+
+.growlUI h2 {
+    display: inline-block;
+    padding-left: 67px;
+    padding-top: 5px;
+}  
+.date_title{font-size:large; font-weight:bold; vertical-align:middle;}
 
 html body div.Content div#circle_red span{ position:relative;}
 #circle_red 

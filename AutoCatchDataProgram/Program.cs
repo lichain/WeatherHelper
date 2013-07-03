@@ -52,6 +52,8 @@ namespace AutoCatchDataProgram
                             ));
                         
                         WeatherDataDAO.NewWeatherData(response.CurrentDay);
+
+                        //WeatherDataDAO.AddForeseeWeatherData(response.OthreDays);
                     }
                     index++;
                     Console.WriteLine("==============================================================================");

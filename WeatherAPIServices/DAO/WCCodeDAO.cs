@@ -9,7 +9,7 @@ using System.Data;
 
 namespace WeatherAPIServices.DAO
 {
-    public class WCCodeDAO
+    public static class WCCodeDAO
     {
         public static List<WCCountry> getWCCountryList()
         {

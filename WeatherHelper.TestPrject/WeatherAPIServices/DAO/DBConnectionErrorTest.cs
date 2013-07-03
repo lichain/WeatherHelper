@@ -26,7 +26,7 @@ namespace WeatherHelper.TestPrject.WeatherAPIServices.DAO
         [ExpectedException(typeof(System.Data.SqlClient.SqlException))]
         public void WeatherDataDAO_NewWeatherData_ConnectionString_Error_Test()
         {
-            CurrentWeatherInfo data = new CurrentWeatherInfo();
+            WeatherInfo data = new WeatherInfo();
             WeatherDataDAO.NewWeatherData(data);
         }
     }

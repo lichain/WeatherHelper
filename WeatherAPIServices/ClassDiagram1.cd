@@ -1,34 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Comment CommentText="WeatherAPIServices">
-    <Position X="6.831" Y="6.303" Height="0.323" Width="1.728" />
+    <Position X="6.185" Y="5.764" Height="0.323" Width="1.728" />
   </Comment>
   <Class Name="WeatherAPIServices.Config.CityAndAreaConfig">
-    <Position X="0.75" Y="0.75" Width="1.75" />
+    <Position X="3.25" Y="3.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAoEACQgAACABEAAACAAAAAAACAAIAAgQAAAAAQACAA=</HashCode>
       <FileName>Config\CityAndAreaConfig.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="WeatherAPIServices.DataContract.Country">
-    <Position X="7" Y="0.5" Width="1.5" />
+  <Class Name="WeatherAPIServices.DataContract.Country" Collapsed="true">
+    <Position X="11.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQMAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>DataContract\Country.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="WeatherAPIServices.DataContract.CurrentWeatherInfo">
-    <Position X="9.25" Y="2" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>IEAAAgIIAAEAEAAAAAICAQAEIAAAAABAAAAIAAAEAAI=</HashCode>
-      <FileName>DataContract\CurrentWeatherInfo.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="ParserService" />
-    </ShowAsAssociation>
-  </Class>
   <Class Name="WeatherAPIServices.DataContract.QueryWeatherRequest">
-    <Position X="4.25" Y="5.5" Width="2" />
+    <Position X="5.25" Y="2" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAkAAAAAAAAAAAAAQAAAEAAAAAAAAAIAAAAAAAAA=</HashCode>
       <FileName>DataContract\QueryWeatherRequest.cs</FileName>
@@ -37,39 +27,29 @@
       <Property Name="QueryServices" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="WeatherAPIServices.DataContract.QueryWeatherResponse">
-    <Position X="7" Y="4.25" Width="2" />
+  <Class Name="WeatherAPIServices.DataContract.QueryWeatherResponse" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAABAA=</HashCode>
       <FileName>DataContract\QueryWeatherResponse.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="WeatherAPIServices.DataContract.WeatherInfo">
-    <Position X="10.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAIAIAAAAAAAAgAAAAAQAAgAAABBAAACAAAAAAI=</HashCode>
-      <FileName>DataContract\WeatherInfo.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="ParserService" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="WeatherAPIServices.Services.GPSLocationService">
-    <Position X="2.75" Y="0.5" Width="2.25" />
+  <Class Name="WeatherAPIServices.Services.GPSLocationService" Collapsed="true">
+    <Position X="3" Y="0.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>gBAAEAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Services\GPSLocationService.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WeatherAPIServices.Services.HttpHelper">
-    <Position X="5.25" Y="0.5" Width="1.5" />
+    <Position X="5.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Services\HttpHelper.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WeatherAPIServices.Services.ParserService">
-    <Position X="6" Y="2.25" Width="1.5" />
+    <Position X="6.25" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
       <FileName>Services\ParserService.cs</FileName>
@@ -79,13 +59,13 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="WeatherAPIServices.Services.QueryServices">
-    <Position X="3.25" Y="3.25" Width="1.5" />
+    <Position X="3.5" Y="1.25" Width="1.5" />
     <AssociationLine Name="ParserService" Type="WeatherAPIServices.Services.ParserService" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="4.75" Y="4.75" />
-        <Point X="5.125" Y="4.75" />
-        <Point X="5.125" Y="3.25" />
-        <Point X="6" Y="3.25" />
+        <Point X="5" Y="2.75" />
+        <Point X="5.123" Y="2.75" />
+        <Point X="5.123" Y="5" />
+        <Point X="6.25" Y="5" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -96,5 +76,103 @@
       <Property Name="ParserService" />
     </ShowAsAssociation>
   </Class>
+  <Class Name="WeatherAPIServices.DataContract.Area" Collapsed="true">
+    <Position X="11.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataContract\Area.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherAPIServices.DataContract.ForeseeWeatherInfo" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAgAAAAAAEAAAAAAAAAAEAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataContract\ForeseeWeatherInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherAPIServices.DataContract.GPSLocation" Collapsed="true">
+    <Position X="11.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAIAQEAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>DataContract\GPSLocation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherAPIServices.DataContract.MemberInfo" Collapsed="true">
+    <Position X="11.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAgAAAAAAAAAAQAACAAAAAA=</HashCode>
+      <FileName>DataContract\MemberInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherAPIServices.DataContract.NotifyRule" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAgAAAIAAAAAAAAAAAAgA=</HashCode>
+      <FileName>DataContract\NotifyRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherAPIServices.DataContract.WCCountry" Collapsed="true">
+    <Position X="11.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataContract\WCCountry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherAPIServices.DataContract.WeatherInfo" Collapsed="true">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAAAgIIAAFAEAAAAAICAQAEIAAAAABAgAAIAAAEAAA=</HashCode>
+      <FileName>DataContract\WeatherInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherAPIServices.DataContract.WeatherInfoBase" Collapsed="true">
+    <Position X="9.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAIAAAAAAAAgAAAAAQAAgAAABBAAACBAAAAAA=</HashCode>
+      <FileName>DataContract\WeatherInfoBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherAPIServices.DAO.DatabaseConfig" Collapsed="true">
+    <Position X="8.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>DAO\DatabaseConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherAPIServices.DAO.MemberInfoDAO" Collapsed="true">
+    <Position X="8.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>DAO\MemberInfoDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherAPIServices.DAO.NotifySettingDAO" Collapsed="true">
+    <Position X="8.25" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>DAO\NotifySettingDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherAPIServices.DAO.WCCodeDAO" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAO\WCCodeDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeatherAPIServices.DAO.WeatherDataDAO" Collapsed="true">
+    <Position X="8.25" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAQAAAAAEAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>DAO\WeatherDataDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="WeatherAPIServices.DataContract.WeatherStatus" Collapsed="true">
+    <Position X="11.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAABAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>DataContract\WeatherStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Microsoft JhengHei UI" Size="9" />
 </ClassDiagram>

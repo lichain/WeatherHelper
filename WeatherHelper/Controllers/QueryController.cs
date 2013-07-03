@@ -13,16 +13,6 @@ namespace WeatherHelper.Controllers
 {
     public class QueryController : Controller
     {
-        public WeatherAPIServices.Services.QueryServices QueryServices
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
         //
         // GET: /Query/
 
@@ -68,6 +58,16 @@ namespace WeatherHelper.Controllers
                 response.CurrentDay.WCCode = model.WCCode;
                 response.CurrentDay.CountryName = CityAndAreaConfig.Instance.getWCCountryNameByWCCode(model.WCCode);
                 ViewBag.CurrentDay = response.CurrentDay;
+                if (response == null || response.CurrentDay == null)
+                {
+                    ViewData["NoData"] = "true";
+                    return View("Index");
+                }
+                else
+                {
+                    ViewData["NoData"] = "false";
+                    return View("Result");
+                }
             }
             catch (System.Net.WebException ex)
             {
@@ -80,12 +80,16 @@ namespace WeatherHelper.Controllers
             }
             catch (System.Exception ex)
             {
-                
                 return View("Error");
             }
 
-            return View("Result");
+           
             //return RedirectToAction("Result");
+        }
+
+        public ActionResult DoQuery()
+        {
+            return RedirectToAction("Index");
         }
 
         public JsonResult QueryWeatherInfo(string weatherCountyCode , string Date)

@@ -55,6 +55,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 		Libraries\Enterprise Library 5.0\Microsoft.Practices.Unity.Interception.dll = Libraries\Enterprise Library 5.0\Microsoft.Practices.Unity.Interception.dll
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service Layer", "Service Layer", "{29C7BFD7-69CF-4933-84BF-E4716B27BF70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebProtal", "WebProtal", "{5751CE96-B23D-47F6-BE6B-B0FC716805CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing Layer", "Testing Layer", "{6B7AD324-1F68-4239-9906-334977781631}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = WeatherHelper.vsmdi
@@ -121,5 +127,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C5D850BC-1A19-446F-917D-78B29AC66BAA} = {29C7BFD7-69CF-4933-84BF-E4716B27BF70}
+		{F411D6FF-D56D-4DAB-8121-F1745C68DD87} = {29C7BFD7-69CF-4933-84BF-E4716B27BF70}
+		{5B6DA2F9-58C0-40F2-9B04-5AD1B33620D4} = {5751CE96-B23D-47F6-BE6B-B0FC716805CF}
+		{FC1BA7BB-3082-4028-9302-B593054553B4} = {5751CE96-B23D-47F6-BE6B-B0FC716805CF}
+		{DCDBC7B6-17B9-4749-A6EC-DEA50E86EF9D} = {6B7AD324-1F68-4239-9906-334977781631}
 	EndGlobalSection
 EndGlobal

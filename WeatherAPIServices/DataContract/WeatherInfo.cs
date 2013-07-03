@@ -5,39 +5,30 @@ using System.Text;
 
 namespace WeatherAPIServices.DataContract
 {
-    public class WeatherInfo
+    public class WeatherInfo : WeatherInfoBase
     {
-        //public DateTime Date { get; set; }
-        //public WeatherStatus Status { get; set; }
-        //public int Temperature_Max { get; set; }
-        //public int Temperature_Min { get; set; }
-        //public int RainyProbability { get; set; }
-
-        public string Low { get; set; }
-        public string High { get; set; }
-        public string Skycodeday { get; set; }
-        public string Date { get; set; }
-        public string Day { get; set; }
-        public string Shortday { get; set; }
-        public string Precip { get; set; }
-        public string WeatherStatus { get; set; }
+        public string WeatherID { get; set; }
+        public string AreaName { get; set; }
+        public string AreaCode { get; set; }
+        public string CountryName { get; set; }
+        public string WCCode { get; set; }
+        public string QueryDate { get; set; }
+        public string Temperature { get; set; }
+        public string Skycode { get; set; }
+        public string Skytext { get; set; }
+        public string Observationtime { get; set; }
+        public string Observationpoint { get; set; }    //觀察點
+        public string Feelslike { get; set; }
+        public string Humidity { get; set; }   //濕度
+        public string Windspeed { get; set; } //風速
+        public string Winddisplay { get; set; }
         public string SkycodeImg
         {
             get
             {
-                return "http://wst.s-msn.com/i/en-us/law/" + this.Skycodeday + ".gif";
+                return "http://wst.s-msn.com/i/en-us/law/" + this.Skycode + ".gif";
             }
         }
-
-        public WeatherAPIServices.Services.ParserService ParserService
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public DateTime CDate { get; set; }
     }
 }

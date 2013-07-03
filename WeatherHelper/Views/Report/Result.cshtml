@@ -1,0 +1,95 @@
+﻿@using WeatherHelper.HtmlHelper
+@using WeatherAPIServices.DataContract
+@{
+    ViewBag.Title = "Report - Result";
+    List<WeatherInfo> weatherinfos = ViewBag.WeatherInfos;
+    string dates = "";
+    string currentDate="";
+}
+
+<legend>
+    <h1>Report - Result</h1>
+</legend>
+<div id="SDate"></div>
+
+@if (weatherinfos != null && weatherinfos.Count > 0)
+{
+    <table id="resulttb" class="table table-hover table-bordered">
+    <tbody>
+    <tr class="tbtitle">
+    	<th>日期</th>
+    	<th>星期</th>
+    	<th>縣市</th>
+    	<th>地點</th>
+    	<th>溫度</th>
+    	<th>天氣</th>
+    	<th>天氣說明</th>
+    	<th>觀測時間</th>
+    	<th>濕度</th>
+    	<th>Low</th>
+    	<th>High</th>
+    </tr>
+    @foreach (var info in weatherinfos)
+    { 
+    <tr data-cdate="@String.Format("{0:yyyyMMdd}", info.CDate)" class="@String.Format("{0:yyyyMMdd}", info.CDate)">
+    @{
+        if (currentDate != String.Format("{0:yyyy/MM/dd}", info.CDate))
+        {
+            currentDate = String.Format("{0:yyyy/MM/dd}", info.CDate);
+            dates += currentDate + ";";
+        }
+        }
+    	<td><span class="Date">@String.Format("{0:yyyy/MM/dd}", info.CDate)</span></td>
+    	<td>@info.Shortday</td>
+    	<td>@info.AreaName</td>
+    	<td>@info.CountryName</td>
+    	<td>@info.Temperature</td>
+    	<td><img width="55" height="45" title="@info.WeatherStatus" src="@info.SkycodeImg" /></td>
+    	<td>@info.WeatherStatus</td>
+    	<td>@info.Observationtime</td>
+    	<td>@info.Humidity</td>
+    	<td>@info.Low</td>
+    	<td>@info.High</td>
+    </tr>
+    }
+    </tbody>
+    </table>
+}
+
+<script type="text/javascript">
+    $(function () {
+        var cdates = "@dates";
+        if(cdates != '')
+	    {
+	        var Dates = new Array();
+	        Dates = cdates.substr(0, cdates.length - 1).split(';');
+	        var html = '<span class="date_title">日期：</span><select id ="seldate" class="select"><option value=-1>全部</option>';
+	        for(var i = 0; i < Dates.length ; i++ ){
+	            html+= '<option value="' + Dates[i]  + '">' + Dates[i] + '</option>';
+	        }
+	        html+='</select>';
+	        $("#SDate").append(html);
+        }
+
+        $("#seldate").change(function(){
+        	var date_value = $(this).val();
+            if(date_value == '-1')
+            {
+                //全選
+                $("#resulttb").find("tr").fadeIn();
+                $.growlUI('', '執行完成！'); 
+            }
+            else
+            {
+                var s=date_value.replace(/\//g,'');
+                var trs = $("#resulttb").find("tr");
+                trs.show();
+                $(".tbtitle").attr("data-cdate",s);
+                var trrs = $("#resulttb").find('tr[data-cdate!="'+ s +'"]');
+                trrs.fadeOut();
+                $.growlUI('', '執行完成！'); 
+            }
+        });
+
+    });
+</script>

@@ -12,9 +12,9 @@ namespace WeatherAPIServices.DataContract
             //public WeatherInfo Day3 { get; set; }
             //public WeatherInfo Day4 { get; set; }
             //public WeatherInfo Day5 { get; set; }
-            public List<WeatherInfo> OthreDays { get; set; }
+            public List<ForeseeWeatherInfo> OthreDays { get; set; }
 
-            public CurrentWeatherInfo CurrentDay { get; set; }
+            public WeatherInfo CurrentDay { get; set; }
 
         }
 }

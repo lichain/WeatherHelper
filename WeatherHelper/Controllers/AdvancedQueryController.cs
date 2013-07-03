@@ -12,22 +12,17 @@ namespace WeatherHelper.Controllers
 {
     public class AdvancedQueryController : Controller
     {
-        public WeatherAPIServices.Services.QueryServices QueryServices
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
         //
         // GET: /AdvancedQuery/
 
         public ActionResult Index()
         {
             return View();
+        }
+
+        public ActionResult DoQuery()
+        {
+            return RedirectToAction("Index");
         }
 
         [HttpPost]
